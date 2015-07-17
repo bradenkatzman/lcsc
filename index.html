@@ -21,8 +21,23 @@
 		margin-bottom: 10px;
 	}
 
+	#titleBar {
+		width: 1500px;
+		height: 700px;
+		overflow: hidden;
+	}
+
 	#slideshow {
-		height: 150px;
+
+	}
+
+	#title {
+		
+	}
+
+	#photo {
+		width: 950px;
+		height: 600px;
 	}
 
 	#navbar {
@@ -44,6 +59,7 @@
 		margin-left: auto;
 		margin-right: auto;
 		overflow: hidden;
+		margin-top: 15px;
 	}
 
 	#eventsScroll {
@@ -53,6 +69,7 @@
 	#leftCol {
 		width: 300px;
 		float: left;
+		margin-left: 20px;
 	}
 
 	#whatIsLCSC {
@@ -60,129 +77,336 @@
 	}
 
 	#purpose {
-		width: 200px;
-		float: left;
-	}
-
-	#LCSCimage {
-		width: 70px;
-		float: left;
-		border: 1px solid red;
+		
 	}
 
 	#middleCol {
 		width: 800px;
 		float: left;
+		margin-left: 8px;
+
 	}
 
 	#rightCol {
 		width: 300px;
 		float: left;
+		margin-left: 8px;
+	}
+
+	.boxes {
+		overflow: hidden;
+	}
+
+	.box {
+		width: 200px;
+		float: left;
+		margin-right: 10px;
+	}
+
+	#topLeft, #bottomLeft {
+		margin-left: 75px;
+	}
+
+	.councilMembers {
+		overflow: hidden;
+	}
+
+	.row {
+		width: 790px;
+	}
+
+	.member {
+		border: 1px solid red;
+		width: 380px;
+		float: left;
+		margin-right: 2px;
+	}
+
+	.firstMember {
+		margin-left: 15px;
+
+	}
+
+	.memberBio {
+		width: 230px;
+	}
+
+	.memberPic {
+		width: 130px;
+	}
+
+	.odd {
+		float: right;
+		margin-right: 2px;
+	}
+
+	.even {
+		float: left;
+		margin-left: 2px;
+	}
+
+	.uneven {
+		margin-left: 200px;
 	}
 
 	</style>
 
 </head>
 
-<body>
+<body onload="setInterval('changePic()',3000);">
 
 	<div id="page">
 
 		<div class="div" id="titleBar">
 			<div id="slideshow">
-				<p>SLIDESHOW</p>
+				<img src="images/lcsc.jpg" alt="photo" id="photo" />
 			</div>
 
 			<div class="div" id="title">
-				<p>TITLE</p>
+				<h1>Welcome to LCSC Online</h1>
 			</div>
 		</div>
 
 		<div class="div" id="navbar">
-			<p>NAVBAR</p>
-
-			<div class="link div" id="firstLink">
+			<div class="link div" id="firstLink" value="index">
 				<p>HOME<p>
 			</div>
 
-			<div class="link div">
+			<div class="link div" value="calendar">
 				<p>CALENDAR<p>
 			</div>
 
-			<div class="link div">
+			<div class="link div" value="newsletter">
 				<p>LCSC Newsletter<p>
 			</div>
 
-			<div class="link div">
+			<div class="link div" value="resources">
 				<p>JTS,CU,BC Links & Resources<p>
 			</div>
 
-			<div class="link div">
+			<div class="link div" value="map">
 				<p>INTERACTIVE MAP<p>
 			</div>
 
-			<div class="link div">
+			<div class="link div" value="explore">
 				<p>Explore New York City!<p>
 			</div>
 
-			<div class="link div">
+			<div class="link div" value="guides">
 				<p>JP and DD Guide<p>
 			</div>
 
-			<div class="link div">
+			<div class="link div" value="bylaws">
 				<p>LCSC Bylaws<p>
 			</div>
 	</div>
 
 		<div class="div">
 			<div class="div" id="main">
-				<p>MAIN</p>
 				<div class="div" id="eventsScroll">
-					<p> <-- events scroll --> </p>
+					<p> Comments and Suggestions (scrolling back and forth) </p>
 				</div>
 
-				<div class="div" id="panel">
-					<p>PANEL</p>
-
-					<div class="div" id="leftCol">
-						<p>LEFT COLUMN</p>
-
+				<div id="panel">
+					<div id="leftCol">
 						<div class="div" id="whatIsLCSC">
-							<p>What is LCSC?</p>
+							<h3>What is LCSC?</h3>
 
 							<div id="aboutLCSC">
 								<div id="purpose">
-									<p>purpose</p>
-								</div>
-
-								<div id="LCSCimage">
-									<p>LCSC Image</p>
+									<p>List College Student Council, also known as LCSC, is the student-run governing body of List College, an undergraduate program within the Jewish Theological Seminary of America and Columbia University.
+									<br><br>
+									LCSC pursues academic, political, social, and administrative initiatives of concern to the student body and advocates for the interests of List College students. It also serves as a liaison between the student body and the List College administration, the larger JTS community, and other relevant organizations and individuals.
+									<br><br>
+									LCSC, in conjunction with the offices of Student Life, Residence Life, and Career Development, supplements its policy-oriented work with an array of social, educational, and cocurricular programs. Some of its most popular programs include the List College Formal, Friday-night dinners, and study breaks.
+									<br><br>
+									LCSC is composed of ten student-held positions, each devoted to a different aspect of student life in List College. These positions include one president, four Vice Presidents, four Class Presidents, and one Double Degree Representative. For more information about how LCSC operates or about each position, refer to LCSC’s Bylaws. </p>
 								</div>
 							</div>
 						</div>
 					</div>
 
 					<div class="div" id="middleCol">
-						<p>MIDDLE COLLUMN</p>
 
 						<div class="div" id="topMidCol">
-							<p>TOP MIDDLE COL</p>
+							<div class="div" id="boxesScroll">
+								<p>CLICK US! (scrolling aroung outside of boxes)</p>
+							<div class="boxes div">
+								
+								<div class="box div" id="topLeft">
+									<p>Read Today's Top News Headlines</p>
+								</div>
+
+								<div class="box div">
+									<p>Read LCSC's Bi-Weekly Newsletter to learn about everything happening with Council</p>
+								</div>
+
+								<div class="box div">
+									<p>Find Anything on Campus with Our Interactive Map</p>
+								</div>
+							</div>
+
+							<div class="boxes div">
+								<div class="box div" id="bottomLeft">
+									<p>EXPLORE NYC! We've got you covered with everything you need to do in New York City. A lot of them are FREE!</p>
+								</div>
+
+								<div class="box div">
+									<p>Are you new to The Joint Program or the Double Degree Program? We've got your back, everything you need to know to navigate this experience is right here!</p>
+								</div>
+
+								<div class="box div">
+									<div class="div" id="fbPage">
+										<p>Like our Facebook page so you don't miss updates on all LCSC action!</p>
+									</div>
+
+									<div class="div" id="fbGroup">
+										<p>And join our Facebook group to be automatically invited to all LCSC events!</p>
+									</div>
+									 
+								</div>
+							</div>
+						</div>
+
 						</div>
 
 						<div class="div" id="bottomMidCol">
-							<p>BOTTOM MIDDLE COL</p>
-
 							<div class="div" id="whoIsLCSC">
-								<p>Who is LCSC?</p>
+								<h3>Who's Who on LCSC?</h3>
+
+								<div class="councilMembers">
+									<h4>eboard</h4>
+
+									<div class="row">
+										<div class="member firstMember div">
+											<div class="memberBio even div">
+												<p>Noam bio</p>
+											</div>
+
+											<div class="memberPic even div">
+												<p>Noam picture</p>
+											</div>
+										</div>
+
+										<div class="member div">
+											<div class="memberBio odd div">
+												<p>Harry bio</p>
+											</div>
+
+											<div class="memberPic odd div">
+												<p>Harry picture</p>
+											</div>
+										</div>
+									</div>
+
+
+									<div class="row">
+										<div class="member firstMember div">
+											<div class="memberBio even div">
+												<p>Sam bio</p>
+											</div>
+
+											<div class="memberPic even div">
+												<p>Sam picture</p>
+											</div>
+										</div>
+
+										<div class="member div">
+											<div class="memberBio odd div">
+												<p>Ross bio</p>
+											</div>
+
+											<div class="memberPic odd div">
+												<p>Ross picture</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="row">
+
+									<div class="member uneven div">
+										<div class="memberBio even div">
+											<p>Braden bio</p>
+										</div>
+
+										<div class="memberPic even div">
+											<p>Braden picture</p>
+										</div>
+									</div>
+								</div>
+
+							</div> <!-- end eboard -->
+
+
+							<div class="councilMembers">
+									<h4>Class Presidents and Double Degree Rep</h4>
+
+									<div class="row">
+										<div class="member firstMember div">
+											<div class="memberBio even div">
+												<p>Missy bio</p>
+											</div>
+
+											<div class="memberPic even div">
+												<p>Missy picture</p>
+											</div>
+										</div>
+
+										<div class="member div">
+											<div class="memberBio odd div">
+												<p>Max bio</p>
+											</div>
+
+											<div class="memberPic odd div">
+												<p>Max picture</p>
+											</div>
+										</div>
+									</div>
+
+
+									<div class="row">
+										<div class="member firstMember div">
+											<div class="memberBio even div">
+												<p>Marc bio</p>
+											</div>
+
+											<div class="memberPic even div">
+												<p>Marc picture</p>
+											</div>
+										</div>
+
+										<div class="member div">
+											<div class="memberBio odd div">
+												<p>FCP bio</p>
+											</div>
+
+											<div class="memberPic odd div">
+												<p>FCP picture</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="row">
+
+									<div class="member uneven div">
+										<div class="memberBio even div">
+											<p>Rebecca bio</p>
+										</div>
+
+										<div class="memberPic even div">
+											<p>Rebecca picture</p>
+										</div>
+									</div>
+								</div>
+
+							</div> <!-- end class presidents and DD -->
 							</div>
 						</div>	
 					</div>
 
 					<div class="div" id="rightCol">
-						<p>RIGHT COLUMN</p>
-
 						<div class="div" id="upcomingEvents">
-							<p>Upcoming Events</p>
+							<h3>Upcoming Events</h3>
 						</div>
 					</div>
 				</div>
@@ -193,6 +417,43 @@
 
 
 	<script>
+
+	//picture slideshow
+	var currPic=0;
+
+	var picArray = new Array("images/lcsc.jpg", "images/CUquad.jpg", "images/bkmg.jpg", "images/snow.jpg", "images/CUgrad.jpg", "images/steps.jpg", "images/barnard.jpg", "images/butler.jpg", "images/cp.jpg");
+	var imageArray = new Array();
+
+	for(var i=0; i < picArray.length; i++) {
+		imageArray[i] = new Image();
+		imageArray[i].src = picArray[i];
+	}
+
+	function changePic(){
+	  currPic = currPic + 1;
+	  if (currPic >= picArray.length) {
+	    currPic = 0;
+	  }
+
+	  document.getElementById("photo").src = picArray[currPic];
+	}
+
+	//array of all links
+	var links = document.getElementsByClassName("link");
+
+	//add event listener to each link
+	for (var i = 0; i < links.length; i++) {
+		links[i].addEventListener("click", navigation, false);
+	}
+
+
+	function navigation() {
+		//concatenate link value with .html file extension
+		var value = this.getAttribute("value") + ".html";
+		
+		//relocate page
+		document.location.href = value;
+	}
 
 	</script>
 
