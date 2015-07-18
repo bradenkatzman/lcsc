@@ -109,6 +109,10 @@
 
 	}
 
+	#topMidCol {
+		height: 390px;
+	}
+
 	#rightCol {
 		width: 300px;
 		float: left;
@@ -187,7 +191,7 @@
 
 </head>
 
-<body onload="setInterval('changePic()',3500);">
+<body>
 
 	<div id="page">
 
@@ -242,8 +246,8 @@
 
 		<div>
 			<div id="main">
-				<div class="center div" id="commentsScroll">
-					<span id="comments"> Comments and Suggestions (scrolling left to right)</span>
+				<div class="center div" id="commentsScroll" style="position: relative; left: 0px; width: 200px;">
+					<span id="comments"> Click Here to contact LCSC, suggest an event, or anything else!</span>
 				</div>
 
 				<div id="panel">
@@ -269,10 +273,12 @@
 
 						<div class="div" id="topMidCol">
 							<div class="center div" id="boxesScroll">
-								<p>CLICK US! (scrolling aroung outside of boxes)</p>
+								<div id="scrollingClick" style="position: relative; right: 0px; left: 0px; top: 15px; width: 80px;">
+									<p>CLICK US</p>
+								</div>
 							<div class="boxes div">
 								
-								<div class="box border div" id="topLeft">
+								<div class="box border boxRight div" id="topLeft">
 									<p>Read Today's Top News Headlines</p>
 								</div>
 
@@ -286,7 +292,7 @@
 							</div>
 
 							<div class="boxes div">
-								<div class="box border div" id="bottomLeft">
+								<div class="box boxRight border div" id="bottomLeft">
 									<p>EXPLORE NYC! We've got you covered with everything you need to do in New York City. A lot of them are FREE!</p>
 								</div>
 
@@ -446,7 +452,11 @@
 
 					<div class="div" id="rightCol">
 						<div class="center border div" id="upcomingEvents">
-							<h3>Upcoming Events</h3>
+							<h3>Campus News and Events</h3>
+
+
+
+
 
 								<ul>
 									<li>Columbia Event</li>
@@ -465,6 +475,26 @@
 
 
 	<script>
+
+	var commentsInterval;
+
+	//onload events
+	function start() {
+		setInterval('changePic()',3500);
+		setInterval('clickUs()', 3);
+		setCommentsInterval();
+	}
+
+	function setCommentsInterval() {
+		commentsInterval = setInterval('moveComments()',10);
+	}
+
+	window.onload = start;
+
+	//set on hover event listener for comments
+	document.getElementById("commentsScroll").addEventListener("mouseover", mouseOverComments);
+	document.getElementById("commentsScroll").addEventListener("mouseout", mouseOutComments);
+
 
 	//picture slideshow
 	var currPic=0;
@@ -507,6 +537,51 @@
 		//relocate page
 		document.location.href = value;
 	}
+
+	function mouseOverComments() {
+		clearInterval(commentsInterval);
+	}
+
+	function mouseOutComments() {
+		setCommentsInterval();
+	}
+
+
+	function moveComments() {
+    	var commentsElem = document.getElementById("commentsScroll");
+    	var pos = parseInt(commentsElem.style.left);
+	
+		pos += 1;
+		if (pos > 1400) {
+			pos = 0;
+		}
+			
+	
+		commentsElem.style.left = pos + "px";
+	}
+
+	function clickUs() {
+		var clickUs = document.getElementById("scrollingClick");
+		var posRight = parseInt(clickUs.style.right);
+		var posLeft = parseInt(clickUs.style.left);
+		var posTop = parseInt(clickUs.style.top);
+
+		//check if on top
+		if (posTop == 15 && posLeft < 720)
+		{
+			clickUs.style.left = ++posLeft + "px";
+		}
+		else if (posLeft == 720 && posTop < 370) {
+			clickUs.style.top = ++posTop + "px";
+		}
+		else if (posLeft <= 720 && posLeft > 0 && posTop == 370) {
+			clickUs.style.left = --posLeft + "px";
+		}
+		else if (posLeft == 0 && posTop > 15) {
+			clickUs.style.top = --posTop + "px";
+		}		
+	}
+	
 
 	</script>
 
