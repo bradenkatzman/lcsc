@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title>Comments/Suggestions Form</title>
+
+	<style type="text/css">
+
+		body {
+			width: 600px;
+			height: 500px;
+		}
+
+		h3 {
+			font-style: italic;
+		}
+
+		#form {
+			width: 450px;
+			height: 400px;
+		}
+
+		.bold {
+			font-weight: bold;
+		}
+
+	</style>
+
+</head>
+
+<body>
+
+	<h1>Please suggest an event, leave us a comment, or anything else!</h1>
+	<h3>Our job is to make your List College experience as fulfilling as possible.</h3>
+
+	<p>***NOTE: If your computer's default mail application is not configured, please send an email to brkatzman@jtsa.edu with your comment</p>
+	<p>After submitting, please close the form window</p>
+
+	<form action="mailto:brkatzman@jtsa.edu" method="post"  enctype="text/plain" id="form">
+		<fieldset>
+			<legend>LCSC Comments and Suggestions</legend>
+			<table>
+				<tr>
+					<td class="bold">Name: </td>
+					<td><input type="text" name="name"></td>
+				</tr>
+				<tr>
+					<td class="bold">Email: </td>
+					<td><input type="text" name="email"></td>
+				</tr>
+				<tr>
+					<td class="bold">Program: </td>
+					<td><input type="radio" name="program" value="jp">Joint Program
+						<br>
+						<input type="radio" name="program" value="dd">Double Degree Program
+				</tr>
+			</table>
+				<textarea name="comment" form="form" rows="20" cols="60" placeholder="Enter message here..."></textarea>
+
+				<input type="submit" name="submit" value="Submit Comment">
+				<input type="reset" value="Reset">
+		</fieldset>
+	</form>
+
+	<script>
+
+
+	</script>
+
+</body>
+
+</html>

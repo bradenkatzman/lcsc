@@ -9,14 +9,13 @@
 	<style type="text/css">
 
 	body {
-		background-color: #FFFFCC;
+		background-color: #E6FFFF;
 	}
 
 	#page {
 		width: 1500px;
 		margin-left: auto;
 		margin-right: auto;
-		/*text-align: center;*/
 	}
 
 	.div {
@@ -69,7 +68,7 @@
 		overflow: hidden;
 	}
 
-	.link {
+	.link, #comments {
 		width: 130px;
 		margin-right: 10px;
 		float: left;
@@ -81,11 +80,17 @@
 	}
 
 	#main {
-		width: 1450px;
+		width: 1500px;
 		margin-left: auto;
 		margin-right: auto;
 		overflow: hidden;
 		margin-top: 15px;
+	}
+
+	#comingUp {
+		background-color: #99CCFF;
+		border: 2px solid red;
+		font-size: 14pt;
 	}
 
 	#leftCol {
@@ -110,13 +115,15 @@
 	}
 
 	#topMidCol {
-		height: 390px;
+		height: 400px;
+		width: 800px;
+		margin-left: 15px;
 	}
 
 	#rightCol {
 		width: 300px;
 		float: left;
-		margin-left: 8px;
+		margin-left: 35px;
 	}
 
 	.boxes {
@@ -157,6 +164,10 @@
 
 	}
 
+	.position {
+		font-weight: bold;
+	}
+
 	.memberBio {
 		width: 230px;
 	}
@@ -185,6 +196,76 @@
 
 	.center {
 		text-align: center;
+	}
+
+	#scrollingClick {
+		position: relative;
+		color: #0066FF;
+		font-weight: bold;
+		width: 90px;
+		font-size: 14pt;
+		text-shadow: 1px 1px #000000;
+	}
+
+	.names {
+		height: 60px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		font-size: 15pt;
+	}
+
+	#hiddenDivTop1 {
+		position: absolute;
+		width: 800px;
+		height: 450px;
+		top: 680px;
+		background-color: #FFCCCC;
+		font-size: 16pt;
+	}
+
+	#hiddenDivTop2 {
+		position: absolute;
+		width: 800px;
+		height: 450px;
+		top: 845px;
+		background-color: #FFCCCC;
+		font-size: 16pt;
+	}
+
+	#hiddenDivTop3 {
+		position: absolute;
+		width: 800px;
+		height: 450px;
+		top: 1025px;
+		background-color: #FFCCCC;
+		font-size: 16pt;
+	}
+
+	#hiddenDivBottom1 {
+		position: absolute;
+		width: 800px;
+		height: 450px;
+		top: 1265px;
+		background-color: #FFCCCC;
+		font-size: 16pt;
+	}
+
+	#hiddenDivBottom2 {
+		position: absolute;
+		width: 800px;
+		height: 450px;
+		top: 1430px;
+		background-color: #FFCCCC;
+		font-size: 16pt;
+	}
+
+	#hiddenDivBottom3 {
+		position: absolute;
+		width: 800px;
+		height: 450px;
+		top: 1590px;
+		background-color: #FFCCCC;
+		font-size: 16pt;
 	}
 
 	</style>
@@ -242,12 +323,16 @@
 			<div class="link border div" value="bylaws">
 				<p>LCSC Bylaws<p>
 			</div>
+
+			<div class="border div" value="bylaws" id="comments">
+				<p>Comments or suggestions?<br> Let us know!<p>
+			</div>
 	</div>
 
 		<div>
 			<div id="main">
-				<div class="center div" id="commentsScroll" style="position: relative; left: 0px; width: 200px;">
-					<span id="comments"> Click Here to contact LCSC, suggest an event, or anything else!</span>
+				<div class="center div" id="scroll" style="position: relative; left: 0px; width: 200px;">
+					<div id="comingUp">UPCOMING EVENT! RSVP HERE</div>
 				</div>
 
 				<div id="panel">
@@ -273,7 +358,7 @@
 
 						<div class="div" id="topMidCol">
 							<div class="center div" id="boxesScroll">
-								<div id="scrollingClick" style="position: relative; right: 0px; left: 0px; top: 15px; width: 80px;">
+								<div id="scrollingClick" style="left: 0px; top: 0px;">
 									<p>CLICK US</p>
 								</div>
 							<div class="boxes div">
@@ -315,6 +400,7 @@
 
 						</div>
 
+
 						<div class="div" id="bottomMidCol">
 							<div class="border div" id="whoIsLCSC">
 								<h3 class="center">Who's Who on LCSC?</h3>
@@ -324,9 +410,9 @@
 
 									<div class="row">
 										<div class="member firstMember div">
-											<div class="memberBio even border div">
-												<span class="position center">President</span>
-												<p>Noam bio</p>
+											<div class="memberBio even div">
+												<div class="position center">President<br>Noam Kornsgold</div>
+												<div class="names center border"value="noam">Read Noam's Bio</div>
 											</div>
 
 											<div class="memberPic even border div">
@@ -335,8 +421,9 @@
 										</div>
 
 										<div class="member div">
-											<div class="memberBio odd center border div">
-												<p>Harry bio</p>
+											<div class="memberBio odd center div">
+												<div class="position center">Vice President of Policy<br>Harry Blumsack</div>
+												<div class="names center border"value="harry">Read Harry's Bio</div>
 											</div>
 
 											<div class="memberPic odd border div">
@@ -348,8 +435,9 @@
 
 									<div class="row">
 										<div class="member firstMember div">
-											<div class="memberBio even center border div">
-												<p>Sam bio</p>
+											<div class="memberBio even center div">
+												<div class="position center">Vice President of Student Life<br>Sam Schachter</div>
+												<div class="names center border" value="sam">Read Sam's Bio</div>
 											</div>
 
 											<div class="memberPic even border div">
@@ -358,8 +446,9 @@
 										</div>
 
 										<div class="member div">
-											<div class="memberBio odd center border div">
-												<p>Ross bio</p>
+											<div class="memberBio odd center div">
+												<div class="position center">Vice President of Finance and Treasury<br>Ross Haimowitz</div>
+												<div class="names center border" value="ross">Read Ross' Bio</div>
 											</div>
 
 											<div class="memberPic odd border div">
@@ -371,8 +460,9 @@
 									<div class="row">
 
 									<div class="member uneven div">
-										<div class="memberBio even center border div">
-											<p>Braden bio</p>
+										<div class="memberBio even center div">
+											<div class="position center">Vice President of Communications<br>Braden Katzman</div>
+											<div class="names center border" value="braden">Read Braden's Bio</div>
 										</div>
 
 										<div class="memberPic even border div">
@@ -380,17 +470,40 @@
 										</div>
 									</div>
 								</div>
-
 							</div> <!-- end eboard -->
 
+							<div id="hiddenDivTop1" class="hide" style="display: none;">
 
+							</div> <!-- end hiddenDivTop1 -->
+
+							<div id="hiddenDivTop2" class="hide"  style="display: none;">
+
+							</div> <!-- end hiddenDivTop2 -->
+
+							<div id="hiddenDivTop3" class="hide" style="display: none;">
+
+							</div> <!-- end hiddenDivTop3 -->
+
+							<div id="hiddenDivBottom1" class="hide"  style="display: none;">
+
+							</div> <!-- end hiddenDivBottom1 -->
+
+							<div id="hiddenDivBottom2" class="hide"  style="display: none;">
+
+							</div> <!-- end hiddenDivBottom2 -->
+
+							<div id="hiddenDivBottom3" class="hide" style="display: none;">
+
+							</div> <!-- end hiddenDivBottom3 -->
+							
 							<div class="councilMembers">
-									<h4>Class Presidents and Double Degree Rep</h4>
+									<h4 class="center">Class Presidents and Double Degree Rep</h4>
 
 									<div class="row">
 										<div class="member firstMember div">
-											<div class="memberBio even center border div">
-												<p>Missy bio</p>
+											<div class="memberBio even center div">
+												<div class="position center">Senior Class President<br>Missy Zedeck</div>
+												<div class="names center border" value="missy">Read Missy's Bio</div>
 											</div>
 
 											<div class="memberPic even border div">
@@ -399,8 +512,9 @@
 										</div>
 
 										<div class="member div">
-											<div class="memberBio odd center border div">
-												<p>Max bio</p>
+											<div class="memberBio odd center div">
+												<div class="position center">Junior Class President<br>Max Rettig</div>
+												<div class="names center border" value="max">Read Max's Bio</div>
 											</div>
 
 											<div class="memberPic odd border div">
@@ -412,8 +526,9 @@
 
 									<div class="row">
 										<div class="member firstMember div">
-											<div class="memberBio even center border div">
-												<p>Marc bio</p>
+											<div class="memberBio even center div">
+												<div class="position center">Sophomore Class President<br>Marc Hersch</div>
+												<div class="names center border" value="marc">Read Marc's Bio</div>
 											</div>
 
 											<div class="memberPic even border div">
@@ -422,8 +537,9 @@
 										</div>
 
 										<div class="member div">
-											<div class="memberBio odd center border div">
-												<p>FCP bio</p>
+											<div class="memberBio odd center div">
+												<div class="position center">Freshman Class President<br>FCP Name</div>
+												<div class="names center border" value="fcp">Read FCP's Bio</div>
 											</div>
 
 											<div class="memberPic odd border div">
@@ -435,8 +551,9 @@
 									<div class="row">
 
 									<div class="member uneven div">
-										<div class="memberBio even center border div">
-											<p>Rebecca bio</p>
+										<div class="memberBio even center div">
+											<div class="position center">Double Degree Representative<br>Rebecca Galin</div>
+											<div class="names center border" value="rebecca">Read Rebeccas's Bio</div>
 										</div>
 
 										<div class="memberPic even border div">
@@ -476,24 +593,27 @@
 
 	<script>
 
-	var commentsInterval;
+	//global variable to stop comments scroll on hover
+	var upcomingInterval;
 
 	//onload events
 	function start() {
 		setInterval('changePic()',3500);
-		setInterval('clickUs()', 3);
-		setCommentsInterval();
+		setInterval('clickUs()', 7);
+		setUpcomingInterval();
 	}
 
-	function setCommentsInterval() {
-		commentsInterval = setInterval('moveComments()',10);
+	function setUpcomingInterval() {
+		upcomingInterval = setInterval('moveComments()',10);
 	}
 
 	window.onload = start;
 
-	//set on hover event listener for comments
-	document.getElementById("commentsScroll").addEventListener("mouseover", mouseOverComments);
-	document.getElementById("commentsScroll").addEventListener("mouseout", mouseOutComments);
+	//set on click for upcoming
+	document.getElementById("scroll").addEventListener("click", rsvp);
+
+	//set on click for comments
+	document.getElementById("comments").addEventListener("click", commentForm);
 
 
 	//picture slideshow
@@ -538,26 +658,121 @@
 		document.location.href = value;
 	}
 
+	//separate positions objects for maintainability
+
+	var president = {
+		name:"noam",
+		bio:"president",
+		div:"hiddenDivTop1"
+	};
+	var vpPolicy = {
+		name:"harry",
+		bio:"finance",
+		div:"hiddenDivTop1"
+	};
+	var vpSL = {
+		name:"sam",
+		bio:"student life",
+		div:"hiddenDivTop2"
+	};
+	var vpFinance = {
+		name:"ross",
+		bio:"finance",
+		div:"hiddenDivTop2"
+	};
+	var vpComm = {
+		name:"braden",
+		bio:"communciations",
+		div:"hiddenDivTop3"
+	};
+
+	var SCP = {
+		name:"missy",
+		bio:"senior class president",
+		div:"hiddenDivBottom1"
+	};
+	var JCP = {
+		name:"max",
+		bio:"junior class president",
+		div:"hiddenDivBottom1"
+	};
+	var sophCP = {
+		name:"marc",
+		bio:"sophomore class president",
+		div:"hiddenDivBottom2"
+	};
+	var FCP = {
+		name:"fcp",
+		bio:"freshman class president",
+		div:"hiddenDivBottom2"
+	};
+	var DDR = {
+		name:"rebecca",
+		bio:"double degree representative",
+		div:"hiddenDivBottom3"
+	};
+
+	var bios = [president, vpPolicy, vpSL, vpFinance, vpComm, SCP, JCP, sophCP, FCP, DDR];
+
+	//array of all council members
+	var members = document.getElementsByClassName("names");
+
+	//add event listener to each member
+	for (var z = 0; z < members.length; z++) {
+		members[z].addEventListener("mouseover", mouseOverMember);
+		members[z].addEventListener("mouseout", mouseOutMember);
+	}
+
+	function mouseOverMember() {
+		var name = this.getAttribute("value");
+
+		for (var w = 0; w < bios.length; w++) {
+			if (bios[w].name == name) {
+				var bio = bios[w].bio;
+				var divID = bios[w].div;
+
+				var div = document.getElementById(divID);
+
+				div.innerHTML = bio;
+				div.style.display = "";
+			}
+		}
+
+	}
+
+	function mouseOutMember() {
+		var divs = document.getElementsByClassName("hide");
+
+		for (var n = 0; n < divs.length; n++) {
+			divs[n].style.display = "";
+			divs[n].style.display = "none";
+		}
+	}
+
+	//set on hover and off event listener for upcoming
+	document.getElementById("scroll").addEventListener("mouseover", mouseOverComments);
+	document.getElementById("scroll").addEventListener("mouseout", mouseOutComments);
+
 	function mouseOverComments() {
-		clearInterval(commentsInterval);
+		clearInterval(upcomingInterval);
 	}
 
 	function mouseOutComments() {
-		setCommentsInterval();
+		setUpcomingInterval();
 	}
 
 
 	function moveComments() {
-    	var commentsElem = document.getElementById("commentsScroll");
-    	var pos = parseInt(commentsElem.style.left);
+    	var scrollingElem = document.getElementById("scroll");
+    	var pos = parseInt(scrollingElem.style.left);
 	
 		pos += 1;
 		if (pos > 1400) {
-			pos = 0;
+			pos = -130;
 		}
 			
 	
-		commentsElem.style.left = pos + "px";
+		scrollingElem.style.left = pos + "px";
 	}
 
 	function clickUs() {
@@ -567,21 +782,33 @@
 		var posTop = parseInt(clickUs.style.top);
 
 		//check if on top
-		if (posTop == 15 && posLeft < 720)
+		if (posTop == 0 && posLeft < 720)
 		{
 			clickUs.style.left = ++posLeft + "px";
 		}
 		else if (posLeft == 720 && posTop < 370) {
 			clickUs.style.top = ++posTop + "px";
 		}
-		else if (posLeft <= 720 && posLeft > 0 && posTop == 370) {
+		else if (posLeft <= 720 && posLeft > -17 && posTop == 370) {
 			clickUs.style.left = --posLeft + "px";
 		}
-		else if (posLeft == 0 && posTop > 15) {
+		else if (posLeft == -17 && posTop > 0) {
 			clickUs.style.top = --posTop + "px";
 		}		
 	}
-	
+
+	var form;
+
+	function commentForm() {
+		form = window.open("", "popup", "width=600px, height=500px");
+		form.document.open();
+		form.window.focus();
+		form.location.href = "form.html";
+	}
+
+	function rsvp() {
+		console.log("RSVP");
+	}
 
 	</script>
 
