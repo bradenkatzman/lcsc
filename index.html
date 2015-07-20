@@ -31,6 +31,7 @@
 		width: 1500px;
 		height: 350px;
 		overflow: hidden;
+		box-shadow: 3px 3px 3px #000000;
 	}
 
 	.slideshow {
@@ -69,6 +70,8 @@
 	}
 
 	.link, #comments {
+		font-weight: bold;
+		font-size: 13pt;
 		width: 130px;
 		margin-right: 10px;
 		float: left;
@@ -91,6 +94,7 @@
 		background-color: #99CCFF;
 		border: 2px solid red;
 		font-size: 14pt;
+		box-shadow: 10px 10px 10px #000000;
 	}
 
 	#leftCol {
@@ -101,6 +105,7 @@
 
 	#whatIsLCSC {
 		overflow: hidden;
+		box-shadow: 3px 3px 3px #000000;
 	}
 
 	#purpose {
@@ -110,14 +115,17 @@
 	#middleCol {
 		width: 800px;
 		float: left;
-		margin-left: 8px;
+		margin-left: 25px;
 
 	}
 
 	#topMidCol {
 		height: 400px;
 		width: 800px;
-		margin-left: 15px;
+	}
+
+	#bottomMidCol {
+		box-shadow: 3px 3px 3px #000000;
 	}
 
 	#rightCol {
@@ -126,18 +134,25 @@
 		margin-left: 35px;
 	}
 
+	#upcomingEvents {
+		box-shadow: 3px 3px 3px #000000;
+	}
+
 	.boxes {
 		overflow: hidden;
 	}
 
 	.box {
+		font-size: 13pt;
+		font-weight: bold;
 		width: 200px;
 		float: left;
-		margin-right: 10px;
+		margin-right: 25px;
+		box-shadow: 5px 5px 5px #000000;
 	}
 
 	#fbPage {
-		border-bottom: 1px solid black;
+		border-bottom: 3px solid black;
 	}
 
 	#topLeft, #bottomLeft {
@@ -214,58 +229,45 @@
 		font-size: 15pt;
 	}
 
-	#hiddenDivTop1 {
+	.hiddenDiv {
 		position: absolute;
 		width: 800px;
-		height: 450px;
-		top: 680px;
+		height: 440px;
 		background-color: #FFCCCC;
 		font-size: 16pt;
+		box-shadow: 15px 15px 15px #000000;
+	}
+
+	#hiddenDivTop1 {
+		top: 720px;
 	}
 
 	#hiddenDivTop2 {
-		position: absolute;
-		width: 800px;
-		height: 450px;
-		top: 845px;
-		background-color: #FFCCCC;
-		font-size: 16pt;
+		top: 875px;
 	}
 
 	#hiddenDivTop3 {
-		position: absolute;
-		width: 800px;
-		height: 450px;
-		top: 1025px;
-		background-color: #FFCCCC;
-		font-size: 16pt;
+		top: 1060px;
 	}
 
 	#hiddenDivBottom1 {
-		position: absolute;
-		width: 800px;
-		height: 450px;
-		top: 1265px;
-		background-color: #FFCCCC;
-		font-size: 16pt;
+		top: 1315px;
 	}
 
 	#hiddenDivBottom2 {
-		position: absolute;
-		width: 800px;
-		height: 450px;
-		top: 1430px;
-		background-color: #FFCCCC;
-		font-size: 16pt;
+		top: 1480px;
 	}
 
 	#hiddenDivBottom3 {
-		position: absolute;
-		width: 800px;
-		height: 450px;
-		top: 1590px;
-		background-color: #FFCCCC;
-		font-size: 16pt;
+		top: 1640px;
+	}
+
+	.large {
+		font-size: 20pt;
+	}
+
+	.medium {
+		font-size: 15pt;
 	}
 
 	</style>
@@ -284,6 +286,7 @@
 			<div class="center" id="title">
 				<h1 id="LCSConline">LCSC ONLINE</h1>
 				<h3 id="source">Your source for everything<br>List College Student Council</h3>
+				<h4><br><br>Got a slideshow worthy photo? Email it to brkatzman@jtsa.edu!</h4>
 			</div>
 
 			<div class="slideshow">
@@ -338,7 +341,7 @@
 				<div id="panel">
 					<div id="leftCol">
 						<div class="border div" id="whatIsLCSC">
-							<h3 class="center">What is LCSC?</h3>
+							<h3 class="center large">What is LCSC?</h3>
 
 							<div id="aboutLCSC">
 								<div id="purpose">
@@ -357,11 +360,11 @@
 					<div class="div" id="middleCol">
 
 						<div class="div" id="topMidCol">
-							<div class="center div" id="boxesScroll">
+							<div class="center div">
 							<div class="boxes div">
 								
 								<div class="box border boxRight div" id="topLeft">
-									<p>Read Today's Top News Headlines</p>
+									<p>Read the Headlines from Morningside Heights</p>
 								</div>
 
 								<div class="box border div">
@@ -384,7 +387,7 @@
 
 								<div class="box border div">
 									<div class="div" id="fbPage">
-										<p>Like our Facebook page so you don't miss updates on all LCSC action!</p>
+										<p>Like our Facebook page so you don't miss updates on all the LCSC action!</p>
 									</div>
 
 									<div class="div" id="fbGroup">
@@ -400,10 +403,10 @@
 
 						<div class="div" id="bottomMidCol">
 							<div class="border div" id="whoIsLCSC">
-								<h3 class="center">Who's Who on LCSC?</h3>
+								<h3 class="center large">Who's Who on LCSC?</h3>
 
 								<div class="councilMembers">
-									<h4 class="center">Executive Board</h4>
+									<h4 class="center medium">Executive Board</h4>
 
 									<div class="row">
 										<div class="member firstMember div">
@@ -469,32 +472,32 @@
 								</div>
 							</div> <!-- end eboard -->
 
-							<div id="hiddenDivTop1" class="hide" style="display: none;">
+							<div id="hiddenDivTop1" class="hide hiddenDiv" style="display: none;">
 
 							</div> <!-- end hiddenDivTop1 -->
 
-							<div id="hiddenDivTop2" class="hide"  style="display: none;">
+							<div id="hiddenDivTop2" class="hide hiddenDiv"  style="display: none;">
 
 							</div> <!-- end hiddenDivTop2 -->
 
-							<div id="hiddenDivTop3" class="hide" style="display: none;">
+							<div id="hiddenDivTop3" class="hide hiddenDiv" style="display: none;">
 
 							</div> <!-- end hiddenDivTop3 -->
 
-							<div id="hiddenDivBottom1" class="hide"  style="display: none;">
+							<div id="hiddenDivBottom1" class="hide hiddenDiv"  style="display: none;">
 
 							</div> <!-- end hiddenDivBottom1 -->
 
-							<div id="hiddenDivBottom2" class="hide"  style="display: none;">
+							<div id="hiddenDivBottom2" class="hide hiddenDiv"  style="display: none;">
 
 							</div> <!-- end hiddenDivBottom2 -->
 
-							<div id="hiddenDivBottom3" class="hide" style="display: none;">
+							<div id="hiddenDivBottom3" class="hide hiddenDiv" style="display: none;">
 
 							</div> <!-- end hiddenDivBottom3 -->
 							
 							<div class="councilMembers">
-									<h4 class="center">Class Presidents and Double Degree Rep</h4>
+									<h4 class="center medium">Class Presidents and Double Degree Rep</h4>
 
 									<div class="row">
 										<div class="member firstMember div">
@@ -566,12 +569,7 @@
 
 					<div class="div" id="rightCol">
 						<div class="center border div" id="upcomingEvents">
-							<h3>Campus News and Events</h3>
-
-
-
-
-
+							<h3><span class="large">Upcoming Events</span><br><span class="medium">CLICK TO RSVP!</span></h3>
 								<ul>
 									<li>Columbia Event</li>
 									<li>Barnard Event</li>
@@ -663,7 +661,7 @@
 	};
 	var vpPolicy = {
 		name:"harry",
-		bio:"finance",
+		bio:"policy",
 		div:"hiddenDivTop1"
 	};
 	var vpSL = {
