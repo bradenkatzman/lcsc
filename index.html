@@ -358,9 +358,6 @@
 
 						<div class="div" id="topMidCol">
 							<div class="center div" id="boxesScroll">
-								<div id="scrollingClick" style="left: 0px; top: 0px;">
-									<p>CLICK US</p>
-								</div>
 							<div class="boxes div">
 								
 								<div class="box border boxRight div" id="topLeft">
@@ -599,7 +596,6 @@
 	//onload events
 	function start() {
 		setInterval('changePic()',3500);
-		setInterval('clickUs()', 7);
 		setUpcomingInterval();
 	}
 
@@ -775,27 +771,6 @@
 		scrollingElem.style.left = pos + "px";
 	}
 
-	function clickUs() {
-		var clickUs = document.getElementById("scrollingClick");
-		var posRight = parseInt(clickUs.style.right);
-		var posLeft = parseInt(clickUs.style.left);
-		var posTop = parseInt(clickUs.style.top);
-
-		//check if on top
-		if (posTop == 0 && posLeft < 720)
-		{
-			clickUs.style.left = ++posLeft + "px";
-		}
-		else if (posLeft == 720 && posTop < 370) {
-			clickUs.style.top = ++posTop + "px";
-		}
-		else if (posLeft <= 720 && posLeft > -17 && posTop == 370) {
-			clickUs.style.left = --posLeft + "px";
-		}
-		else if (posLeft == -17 && posTop > 0) {
-			clickUs.style.top = --posTop + "px";
-		}		
-	}
 
 	var form;
 
