@@ -168,7 +168,7 @@
 	}
 
 	.member {
-		border: 1px solid red;
+		border: 2px solid red;
 		width: 380px;
 		float: left;
 		margin-right: 2px;
@@ -184,21 +184,22 @@
 	}
 
 	.memberBio {
-		width: 230px;
+		float: left;
+		width: 200px;
+		margin-left: 5px;
+		margin-right: 5px;
 	}
 
 	.memberPic {
-		width: 130px;
+		width: 150px;
+		height: 200px;
 	}
 
-	.odd {
-		float: right;
-		margin-right: 2px;
-	}
-
-	.even {
+	.img {
 		float: left;
-		margin-left: 2px;
+		width: 150px;
+		height: 200px;
+		margin-left: 5px;
 	}
 
 	.uneven {
@@ -224,9 +225,10 @@
 
 	.names {
 		height: 60px;
-		margin-top: 10px;
-		margin-bottom: 10px;
+		margin-top: 50px;
 		font-size: 15pt;
+		font-weight: bold;
+		box-shadow: 3px 3px 3px #0000FF;
 	}
 
 	.hiddenDiv {
@@ -234,32 +236,33 @@
 		width: 800px;
 		height: 440px;
 		background-color: #FFCCCC;
-		font-size: 16pt;
+		font-size: 13pt;
 		box-shadow: 15px 15px 15px #000000;
+		padding: 5px;
 	}
 
 	#hiddenDivTop1 {
-		top: 720px;
+		top: 715px;
 	}
 
 	#hiddenDivTop2 {
-		top: 875px;
+		top: 960px;
 	}
 
 	#hiddenDivTop3 {
-		top: 1060px;
+		top: 1210px;
 	}
 
 	#hiddenDivBottom1 {
-		top: 1315px;
+		top: 1535px;
 	}
 
 	#hiddenDivBottom2 {
-		top: 1480px;
+		top: 1785px;
 	}
 
 	#hiddenDivBottom3 {
-		top: 1640px;
+		top: 2030px;
 	}
 
 	.large {
@@ -345,13 +348,13 @@
 
 							<div id="aboutLCSC">
 								<div id="purpose">
-									<p>List College Student Council, also known as LCSC, is the student-run governing body of List College, an undergraduate program within the Jewish Theological Seminary of America and Columbia University.
+									<p>&nbsp&nbspList College Student Council, also known as LCSC, is the student-run governing body of List College, an undergraduate program within the Jewish Theological Seminary of America and Columbia University.
 									<br><br>
-									LCSC pursues academic, political, social, and administrative initiatives of concern to the student body and advocates for the interests of List College students. It also serves as a liaison between the student body and the List College administration, the larger JTS community, and other relevant organizations and individuals.
+									&nbsp&nbspLCSC pursues academic, political, social, and administrative initiatives of concern to the student body and advocates for the interests of List College students. It also serves as a liaison between the student body and the List College administration, the larger JTS community, and other relevant organizations and individuals.
 									<br><br>
-									LCSC, in conjunction with the offices of Student Life, Residence Life, and Career Development, supplements its policy-oriented work with an array of social, educational, and cocurricular programs. Some of its most popular programs include the List College Formal, Friday-night dinners, and study breaks.
+									&nbsp&nbspLCSC, in conjunction with the offices of Student Life, Residence Life, and Career Development, supplements its policy-oriented work with an array of social, educational, and cocurricular programs. Some of its most popular programs include the List College Formal, Friday-night dinners, and study breaks.
 									<br><br>
-									LCSC is composed of ten student-held positions, each devoted to a different aspect of student life in List College. These positions include one president, four Vice Presidents, four Class Presidents, and one Double Degree Representative. For more information about how LCSC operates or about each position, refer to LCSC’s Bylaws. </p>
+									&nbsp&nbspLCSC is composed of ten student-held positions, each devoted to a different aspect of student life in List College. These positions include one president, four Vice Presidents, four Class Presidents, and one Double Degree Representative. For more information about how LCSC operates or about each position, refer to LCSC’s Bylaws. </p>
 								</div>
 							</div>
 						</div>
@@ -410,24 +413,24 @@
 
 									<div class="row">
 										<div class="member firstMember div">
-											<div class="memberBio even div">
-												<div class="position center">President<br>Noam Kornsgold</div>
-												<div class="names center border"value="noam">Read Noam's Bio</div>
+											<div class="img border div">
+												<img src="images/" alt="Noam Kornsgold" class="memberPic"/>
 											</div>
 
-											<div class="memberPic even border div">
-												<p>Noam picture</p>
+											<div class="memberBio div">
+												<div class="position center">President<br>Noam Kornsgold</div>
+												<div class="names center border"value="noam">Read Noam's Bio</div>
 											</div>
 										</div>
 
 										<div class="member div">
-											<div class="memberBio odd center div">
+											<div class="memberBio center div">
 												<div class="position center">Vice President of Policy<br>Harry Blumsack</div>
 												<div class="names center border"value="harry">Read Harry's Bio</div>
 											</div>
 
-											<div class="memberPic odd border div">
-												<p>Harry picture</p>
+											<div class="img border div">
+												<img src="images/" alt="Harry Blumsack" class="memberPic"/>
 											</div>
 										</div>
 									</div>
@@ -435,14 +438,13 @@
 
 									<div class="row">
 										<div class="member firstMember div">
-											<div class="memberBio even center div">
-												<div class="position center">Vice President of Student Life<br>Sam Schachter</div>
-												<div class="names center border" value="sam">Read Sam's Bio</div>
-											</div>
-
-											<div class="memberPic even border div">
-												<p>Sam picture</p>
-											</div>
+												<div class="img border div">
+													<img src="images/" alt="Sam Schachter" class="memberPic"/>
+												</div>
+												<div class="memberBio center div">
+													<div class="position center">Vice President of Student Life<br>Sam Schachter</div>
+													<div class="names center border" value="sam">Read Sam's Bio</div>
+												</div>
 										</div>
 
 										<div class="member div">
@@ -451,8 +453,8 @@
 												<div class="names center border" value="ross">Read Ross' Bio</div>
 											</div>
 
-											<div class="memberPic odd border div">
-												<p>Ross picture</p>
+											<div class="img border div">
+												<img src="images/" alt="Ross Haimowitz" class="memberPic"/>
 											</div>
 										</div>
 									</div>
@@ -460,13 +462,12 @@
 									<div class="row">
 
 									<div class="member uneven div">
-										<div class="memberBio even center div">
+										<div class="img border div">
+											<img src="images/" alt="Braden Katzman" class="memberPic"/>
+										</div>
+										<div class="memberBio center div">
 											<div class="position center">Vice President of Communications<br>Braden Katzman</div>
 											<div class="names center border" value="braden">Read Braden's Bio</div>
-										</div>
-
-										<div class="memberPic even border div">
-											<p>Braden picture</p>
 										</div>
 									</div>
 								</div>
@@ -501,24 +502,23 @@
 
 									<div class="row">
 										<div class="member firstMember div">
-											<div class="memberBio even center div">
+											<div class="img border div">
+												<img src="images/" alt="Missy Zedeck" class="memberPic"/>
+											</div>
+											<div class="memberBio center div">
 												<div class="position center">Senior Class President<br>Missy Zedeck</div>
 												<div class="names center border" value="missy">Read Missy's Bio</div>
-											</div>
-
-											<div class="memberPic even border div">
-												<p>Missy picture</p>
 											</div>
 										</div>
 
 										<div class="member div">
-											<div class="memberBio odd center div">
+											<div class="memberBio center div">
 												<div class="position center">Junior Class President<br>Max Rettig</div>
 												<div class="names center border" value="max">Read Max's Bio</div>
 											</div>
 
-											<div class="memberPic odd border div">
-												<p>Max picture</p>
+											<div class="img border div">
+												<img src="images/maxRettig.jpg" alt="Max Rettig" class="memberPic"/>
 											</div>
 										</div>
 									</div>
@@ -526,24 +526,23 @@
 
 									<div class="row">
 										<div class="member firstMember div">
-											<div class="memberBio even center div">
+											<div class="img border div">
+												<img src="images/marcHersch.png" alt="Marc Hersch" class="memberPic"/>
+											</div>									
+											<div class="memberBio center div">
 												<div class="position center">Sophomore Class President<br>Marc Hersch</div>
 												<div class="names center border" value="marc">Read Marc's Bio</div>
-											</div>
-
-											<div class="memberPic even border div">
-												<p>Marc picture</p>
 											</div>
 										</div>
 
 										<div class="member div">
-											<div class="memberBio odd center div">
+											<div class="memberBio center div">
 												<div class="position center">Freshman Class President<br>FCP Name</div>
 												<div class="names center border" value="fcp">Read FCP's Bio</div>
 											</div>
 
-											<div class="memberPic odd border div">
-												<p>FCP picture</p>
+											<div class="img border div">
+												<img src="images/" alt="FCP NAME" class="memberPic"/>
 											</div>
 										</div>
 									</div>
@@ -551,13 +550,13 @@
 									<div class="row">
 
 									<div class="member uneven div">
-										<div class="memberBio even center div">
-											<div class="position center">Double Degree Representative<br>Rebecca Galin</div>
-											<div class="names center border" value="rebecca">Read Rebeccas's Bio</div>
+										
+										<div class="img border div">
+											<img src="images/" alt="Rebecca Galin" class="memberPic"/>
 										</div>
-
-										<div class="memberPic even border div">
-											<p>Rebecca picture</p>
+										<div class="memberBio even center div">
+											<div class="position center">Double Degree Rep.<br>Rebecca Galin</div>
+											<div class="names center border" value="rebecca">Read Rebeccas's Bio</div>
 										</div>
 									</div>
 								</div>
@@ -687,12 +686,12 @@
 	};
 	var JCP = {
 		name:"max",
-		bio:"junior class president",
+		bio:"&nbsp&nbspHi List College!!! I’m Max Rettig, the Junior Class President on List College Student Council for 2015-2016. At Columbia, I’m majoring in Creative Writing, and at List College, I’m majoring in Modern Jewish Studies with an elective concentration in Ethics. I’m active on both campuses — in my roles on LCSC and in the general List College community — and at Columbia, as a writer for Bwog (Columbia’s preeminent student news forum) and a sports commentator for WKCR, Columbia’s FM radio station (Tune in!). I’ve loved immersing myself in these different communities and only look to get even more engaged on campus. I also love to travel and explore New York City by foot and subway, visiting different neighborhoods, trying out new cafés and simply walking around and gathering the sights and sounds of the city. Oh, and when I get the chance, taking the “7” train to Queens for a fun day watching the Mets. <br><br>&nbsp&nbspAs Junior Class President, I’m responsible for being a liaison and a voice for the members of the junior class. In addition, my other responsibilities include holding monthly events that bring my entire class together to forge closer friendships and enjoy new experiences. Some of my goals include holding Shabbat potluck lunches and/or dinners for my entire class — an easy, fun and meaningful way to talk, learn and enjoy each other’s company — and having events that take us out of the Morningside Bubble and get the junior class excited, involved and wanting to see a new part of the city. I also strive to create a modern system of class-wide communication and engagement — goodbye long, boring emails, hello short weekly updates and fun, informative tweets!<br><br>&nbsp&nbspThis is my first year on LCSC, so most of all, I’m excited to meet new people, become closer with friends, be a loud and advocating voice for the interests of my peers. I want to help create a List College Student Council that students want to talk with, trust and become involved in themselves to make learning and playing at List College a better experience for everyone.",
 		div:"hiddenDivBottom1"
 	};
 	var sophCP = {
 		name:"marc",
-		bio:"sophomore class president",
+		bio:"&nbsp&nbspHello List College! I'm responsible for engaging the members of my class with one another through communal activities and expressing the interest of my class to the greater council. Through my monthly events, I hope to cultivate a sense of appreciation for my classmates' talents and unfound connection between students. In addition, I'm working to incorporate an element of service into the opportunities I provide and bring my class' community outside the walls of List College to inhabit surrounding spaces.<br><br>&nbsp&nbspI most recently served as a staff member for The JustCity Leadership Institute, the pre-college program of JTS, and social media coordinator for a minyan at the Columbia/Barnard Hillel, for which I am currently a service coordinator. I am always conscious to use what I know about Jewish leadership and my fellow classmates not only to represent them, but also to mobilize them to build unity.",
 		div:"hiddenDivBottom2"
 	};
 	var FCP = {
