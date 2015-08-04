@@ -1,12 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-	<title>Interactive Map</title>
-
+	<meta charset="UTF-8" />
+	<title>Campus Map</title>
 	<style type="text/css">
+
+	body {
+		background-color: #FFEBD6;
+	}
+
+	#mapFrame {
+		border: 20px solid blue;
+		float: left;
+	}
+
+	#buttonPanel {
+		float: left;
+		text-align: center;
+	}
+
+	#form {
+		width: 50%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#jumpTo {
+		border: 5px solid red;
+		width: 100%;
+		height: 100%;
+	}
+
 
 	</style>
 
@@ -14,13 +38,301 @@
 
 <body>
 
-	<h1>Map<h1>
+	<div id="mapFrame" style="width: 0px;
+	height: 0px;
+	overflow: hidden;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;">
+	<img id="map" src="images/campusmap.png" alt="map" style="
+	position: relative;
+	left: 0px;
+	top: 0px;
+	width: 0px;
+	height: 0px;
+	">
+</div>
+
+<div id="buttonPanel" style="
+width: ;
+height: ;">
+<form id="form">
+	<table>
+		<tr>
+			<td><input type="button" value="+" onclick="zoom(this)"></td>
+			<td><input type="button" value="-" onclick="zoom(this)"></td>
+		</tr>
+		<tr><td colspan="2"></td></tr>
+		<tr><td colspan="2"></td></tr>
+		<tr>
+			<td colspan="2"><input type="button" value="^" onclick="direction(this)"></td>
+		</tr>
+		<tr><td colspan="2"></td></tr>
+		<tr>
+			<td><input type="button" value="<" onclick="direction(this)"></td>
+			<td><input type="button" value=">" onclick="direction(this)"></td>
+		</tr>
+		<tr><td colspan="2"></td></tr>
+		<tr>
+			<td colspan="2"><input type="button" value="v" onclick="direction(this)"></td>
+		</tr>
+	</table>
+</form>
+
+<div id="jumpTo">
+	<p> JUMP TO A LOCATION </p>
+	<input type="button" value="Butler" onclick="jump(this)"><br>
+	<input type="button" value="Low Library" onclick="jump(this)"><br>
+	<input type="button" value="Lerner" onclick="jump(this)"><br>
+	<input type="button" value="John Jay" onclick="jump(this)"><br>
+	<input type="button" value="Hewitt" onclick="jump(this)"><br>
+	<input type="button" value="Dodge Gym" onclick="jump(this)"><br>
+</div>
+</div>
+
+<script>
+
+//event listeners
+	//triggered when window is resized
+	window.addEventListener("resize",setup,false);
+
+	//triggered when mouse moves
+	document.addEventListener("mousemove",handleMouseMove,false); 
+	
+	//triggered when element is pressed down by cursor
+	document.addEventListener("mousedown",handleMouseDown,false);
+
+	//triggered when element is released by cursor
+	document.addEventListener("mouseup",handleMouseUp,false); 
+
+	//triggered when element is double clicked
+	document.addEventListener("dblclick",handleDblClick,false);
+
+	//global variables
+	var isDragging = false;
+	var mapFrame = document.getElementById("mapFrame");
+	var map = document.getElementById("map");
+	var buttonPanel = document.getElementById("buttonPanel");
+	var oldX = 0;
+	var oldY = 0;
+	var currentX = 0; //for zooming
+	var currentY = 0; //for zooming
+
+	//run on load -- ok to call here b/c of hoisting
+	setup();
+
+	//setup window
+	function setup() {
+		var pageW = window.innerWidth;
+		var pageH = window.innerHeight;
+
+		//size map frame
+		mapFrame.style.marginLeft = (pageW*0.005).toString() + "px";
+		mapFrame.style.marginRight = (pageW*0.005).toString() + "px";
+		mapFrame.style.marginTop = (pageH*0.005).toString() + "px";
+		mapFrame.style.width = (pageW*0.6).toString() + "px";
+		mapFrame.style.height = (pageH*0.9).toString() + "px";
+
+		map.style.width = "1500px";
+		map.style.height = "2200px";
+
+		//size button frame
+		buttonPanel.style.width = (pageW*0.1).toString() + "px";
+		buttonPanel.style.height = (pageH*0.25).toString() + "px";
+	}
+
+	function inFrame(x,y) {
+		//check if click is inside map frame
+		if (x <= parseInt(mapFrame.style.width) && x >= parseInt(mapFrame.style.marginLeft) && y >= parseInt(mapFrame.style.marginTop) && y <= parseInt(mapFrame.style.height)) {
+			return true;
+		}
+		return false;
+	}
+
+	function handleMouseMove(evt) {
+		if (isDragging) {
+
+			var left;
+			var top;
+
+			//check mouse in relation to past movement (horizontal)
+			if (oldX <= evt.clientX && oldX != 0) {
+				left = evt.clientX - oldX;
+				currentX = parseInt(map.style.left) + left;
+				map.style.left = currentX + "px";
+			}
+			if (oldX >= evt.clientX && oldX != 0) {
+				left = oldX - evt.clientX;
+				currentX = parseInt(map.style.left) - left;
+				map.style.left = currentX + "px";
+			}
+
+			//check mouse in relation to past movement (vertical)
+			if (oldY <= evt.clientY && oldY != 0) {
+				top = evt.clientY - oldY;
+				currentY = parseInt(map.style.top) + top;
+				map.style.top = currentY + "px";
+			}
+			if (oldY >= evt.clientY && oldY != 0) {
+				top = oldY - evt.clientY;
+				currentY = parseInt(map.style.top) - top;
+				map.style.top =  currentY + "px";
+			}
+
+			oldX = evt.clientX;
+			oldY = evt.clientY;
+			return false;
+		}	
+
+	}
+
+	function handleMouseDown(evt) {
+		if (inFrame(evt.clientX, evt.clientY)) {
+			isDragging = true;
+			event.preventDefault();
+		}
+	}
+
+	function handleMouseUp(evt) {
+		if (isDragging) {
+			isDragging = false;
+
+		//reset past x and y clicks for fluid movement
+		oldX = 0;
+		oldY = 0;
+	}
+}	
+
+function handleDblClick(evt) {
+	
+	//check if x is left or right of midpoint
+	if (evt.clientX < (parseInt(mapFrame.style.width)/2)) {
+		currentX += (parseInt(mapFrame.style.width)/2) - evt.clientX;
+	}
+	else {
+		currentX -= evt.clientX - (parseInt(mapFrame.style.width)/2);
+	}
+
+	//check if y is above or below midpoint
+	if (evt.clientY < (parseInt(mapFrame.style.height)/2)) {
+		currentY += (parseInt(mapFrame.style.height)/2) - evt.clientY;
+	}
+	else {
+		currentY -= evt.clientY - (parseInt(mapFrame.style.height)/2);
+	}
+
+	map.style.left =  currentX + "px";
+	map.style.top =  currentY + "px";
+
+}
+
+function zoom(button) {
+	//find map dimensions
+	var width = parseInt(map.style.width);
+	var height = parseInt(map.style.height);
+
+	//width to height factor
+	var factor = width/height;
+
+	console.log(factor);
+	
+
+	if (button.value == "+") {
+		//change dimensions
+		height += 200;
+		width += 200*factor;
+	}
+
+	if (button.value == "-") {
+		//change dimensions
+		height -= 200;
+		width -= 200*factor;
+	}
+
+	map.style.width = width.toString() + "px";
+	map.style.height = height.toString() + "px";
+
+}
 
 
-	<script>
+var up;
+var down;
+var left;
+var right;
+var counter = 0;
 
-	</script>
+function direction(button) {
+	if (button.value == "^") {
+		currentY += 100;
+		map.style.top =  currentY + "px";
+	}
+	else if (button.value == "<") {
+		currentX += 100;
+		map.style.left =  currentX + "px";
+	}
+	else if (button.value == ">") {
+		currentX -= 100;
+		map.style.left =  currentX + "px";
+	}
+	else {
+		currentY -= 100;
+		map.style.top =  currentY + "px";
+	}
+}
+
+function jump(button) {
+	if (button.value == "Butler") {
+		map.style.width = "1500px";
+		map.style.height = "2200px";
+		currentX = -400;
+		currentY = -1100;
+		map.style.left = currentX + "px";
+		map.style.top = currentY + "px";
+	}
+	if (button.value == "Low Library") {
+		map.style.width = "1500px";
+		map.style.height = "2200px";
+		currentX = -400;
+		currentY = -600;
+		map.style.left = currentX + "px";
+		map.style.top = currentY + "px";
+	}
+	if (button.value == "Lerner") {
+		map.style.width = "1500px";
+		map.style.height = "2200px";
+		currentX = -225;
+		currentY = -1000;
+		map.style.left = currentX + "px";
+		map.style.top = currentY + "px";
+	}
+	if (button.value == "John Jay") {
+		map.style.width = "1500px";
+		map.style.height = "2200px";
+		currentX = -550;
+		currentY = -1100;
+		map.style.left = currentX + "px";
+		map.style.top = currentY + "px";
+	}
+	if (button.value == "Hewitt") {
+		map.style.width = "1500px";
+		map.style.height = "2200px";
+		currentX = -30;
+		currentY = -700;
+		map.style.left = currentX + "px";
+		map.style.top = currentY + "px";
+	}
+	if (button.value == "Dodge Gym") {
+		map.style.width = "1500px";
+		map.style.height = "2200px";
+		currentX = -300;
+		currentY = -275;
+		map.style.left = currentX + "px";
+		map.style.top = currentY + "px";
+	}
+}
+
+
+</script>
 
 </body>
-
 </html>
