@@ -6,10 +6,14 @@
 
 	<title>Explore NYC!</title>
 
+	<link rel="stylesheet" type="text/css" href="navbar.css">
+
+
 	<style type="text/css">
 
 	body {
 		background-color: #E0D1C2;
+
 	}
 
 	#page {
@@ -78,6 +82,11 @@
 		float: left;
 	}
 
+	#title {
+		font-family: sans-serif;
+		font-size: 13pt;
+	}
+
 	.photo {
 		width: 125px;
 		height: 125px;
@@ -131,6 +140,40 @@
 <body>
 	<div id="page">
 
+				<div class="center" id="navbar">
+			<div class="link border div" id="firstLink" value="index">
+				<p>HOME<p>
+			</div>
+
+			<div class="link border div" value="calendar">
+				<p>CALENDAR<p>
+			</div>
+
+			<div class="link border div" value="newsletter">
+				<p>LCSC Newsletter<p>
+			</div>
+
+			<div class="link border div" value="resources">
+				<p>JTS, CU, BC <br>Links & Resources<p>
+			</div>
+
+			<div class="link border div" value="map">
+				<p>INTERACTIVE MAP<p>
+			</div>
+
+			<div class="link border div" value="explore">
+				<p>Explore New York City!<p>
+			</div>
+
+			<div class="link border div" value="guides">
+				<p>JP and DD Guide<p>
+			</div>
+
+			<div class="link border div" value="bylaws">
+				<p>LCSC Bylaws<p>
+			</div>
+	</div>
+
 		<h1>Explore NEW YORK CITY!</h1>
 
 		<div id="title">
@@ -155,7 +198,7 @@
 									BEACH VOLLEY ON A PIER
 								</div>
 								<div class="reviews">
-									YELP REVIEWS
+									<a href="http://www.yelp.com/biz/pier-25-new-york?osq=pier+25+beach+volleyball" target="_blank">YELP REVIEWS</a>
 								</div>
 							</div>
 
@@ -174,7 +217,7 @@
 									CENTRAL PARK ROWBOATS
 								</div>
 								<div class="reviews">
-									YELP REVIEWS
+									<a href="http://www.yelp.com/biz/the-loeb-boathouse-bike-and-boat-rental-queens?osq=central+park+rowboats" target="_blank">YELP REVIEWS</a>
 								</div>
 							</div>
 
@@ -186,7 +229,7 @@
 								You can rent rowboats (up to 4 people per boat) or non-foot Ocean Kayaks at the Central Park Loeb Boathouse (The Lake off East Drive at 74th Street). <a href="http://pier25.tennisbookings.com/" target="_blank">Website</a>
 							</div>
 							<div class="readMore" value="0">
-								read more
+								Read More
 							</div>
 							<div class="hiddenInfo paid" style="display: none;" value="0">
 								Boat rentals are available daily from 10am-6:30pm. The last boat rental is at 5:30pm and boats much be returned by 6:30pm. The rentals cost $12 for the first hour and $2.50 for each additional 15 minutes. There is a $20 cash deposit required per boat. For more information, check out the Loeb Boathouse website
@@ -209,7 +252,7 @@
 									THE HIGH LINE
 								</div>
 								<div class="reviews">
-									YELP REVIEWS
+									<a href="http://www.yelp.com/biz/the-high-line-new-york" target="_blank">YELP REVIEWS</a>
 								</div>
 							</div>
 
@@ -217,7 +260,7 @@
 								The High Line is a public park built on an historic freight rail line above the streets on Manhattan’s West Side. From Gansevoort St. to West 34th St, between 10th & 11th Ave. Open daily from 7am-10pm. <a href="http://www.thehighline.org/">Website</a>
 							</div>
 							<div class="readMore" value="1">
-								read more
+								Read More
 							</div>
 							<div class="hiddenInfo free" style="display: none;" value="1">
 								The park offers a wide array of artwork including site-specific commissions, exhibitions, performances, video programs, and a series of billboard interventions.<br> 
@@ -236,7 +279,7 @@
 									KARAOKE
 								</div>
 								<div class="reviews">
-									YELP REVIEWS
+									<a href="http://www.yelp.com/search?find_desc=Karaoke&find_loc=New+York%2C+NY" target="_blank">YELP REVIEWS</a>
 								</div>
 							</div>
 
@@ -275,7 +318,7 @@
 									MINI GOLFING
 								</div>
 								<div class="reviews">
-									YELP REVIEWS
+									<a href="http://www.yelp.com/biz/pier-25-new-york?osq=pier+25+beach+volleyball" target="_blank">YELP REVIEWS</a>
 								</div>
 							</div>
 
@@ -294,7 +337,7 @@
 									MUSEUMS
 								</div>
 								<div class="reviews">
-									YELP REVIEWS
+									<a href="http://www.yelp.com/search?find_desc=museums&find_loc=New+York%2C+NY&ns=1" target="_blank">YELP REVIEWS</a>
 								</div>
 							</div>
 
@@ -338,7 +381,7 @@
 									NATURE WALKS
 								</div>
 								<div class="reviews">
-									YELP REVIEWS
+									<a href="http://www.yelp.com/biz/hudson-river-park-new-york?osq=Hudson+River+nature+walks" target="_blank">YELP REVIEWS</a>
 								</div>
 							</div>
 
@@ -356,9 +399,6 @@
 								<div class="name">
 									SHABBAT IN A BAR
 								</div>
-								<div class="reviews">
-									YELP REVIEWS
-								</div>
 							</div>
 
 							<div class="image">
@@ -366,7 +406,7 @@
 							</div>
 
 							<div class="description">
-								TheWarehouse provides an alternative Shabbat experience. These free Shabbat services take place in different bars throughout the city. To find out where the Shabbat is going to take place and to RSVP, visit the <a href="http://www.thewarehousenyc.org/#" target="_blank">website</a>
+								The Warehouse provides an alternative Shabbat experience. These free Shabbat services take place in different bars throughout the city. To find out where the Shabbat is going to take place and to RSVP, visit the <a href="http://www.thewarehousenyc.org/#" target="_blank">website</a>
 							</div>
 						</div>
 					</div>
@@ -380,20 +420,20 @@
 					<div class="info free">
 						<div class="place">
 							<div class="image">
-								<img src="images/maxRettig.jpg" alt="img" class="photo" />
+								<img src="images/explore/NYbotanical.jpg" alt="img" class="photo" />
 							</div>
 
 							<div class="title">
 								<div class="name">
-									SUNSET ON THE HUDSON
+									NEW YORK BOTANICAL GARDEN
 								</div>
 								<div class="reviews">
-									YELP REVIEWS
+									<a href="http://www.yelp.com/biz/new-york-botanical-garden-bronx?osq=new+york+botanical+gardens" target="_blank">YELP REVIEWS</a>
 								</div>
 							</div>
 
 							<div class="description">
-								Come listen to free live music and relax in the grass as the sun sets on Fridays from 7-9pm at Pier 45 (Christopher Street). For more information, check out the Hudson River Park <a href="http://www.hudsonriverpark.org/events/series/sunset-on-the-hudson" target="_blank">website</a>
+								OfferS a student discount with a valid student ID. Grounds only passes are $5 and all-garden passes are $18 on weekdays and $22 on weekends. Grounds passes are free to everyone all day on Wednesdays and from 10-11am on Saturdays.Open 10am-6pm daily. Tickets on the <a href="http://www.nybg.org/" target="_blank">website</a>
 							</div>			
 						</div>
 					</div>
@@ -407,12 +447,12 @@
 									CHELSEA PIERS
 								</div>
 								<div class="reviews">
-									YELP REVIEWS
+									<a href="http://www.yelp.com/biz/the-sports-center-at-chelsea-piers-new-york-3" target="_blank">YELP REVIEWS</a>
 								</div>
 							</div>
 
 							<div class="image">
-								image
+								<img src="images/explore/chelseaPiers.jpg" alt="img" class="photo" />
 							</div>
 
 							<div class="description">
@@ -428,7 +468,7 @@
 					<div class="info free">
 						<div class="place">
 							<div class="image">
-								<img src="images/maxRettig.jpg" alt="img" class="photo" />
+								<img src="images/explore/brooklynBridge.jpg" alt="img" class="photo" />
 							</div>
 
 							<div class="title">
@@ -436,7 +476,7 @@
 									BROOKLYN BRIDGE
 								</div>
 								<div class="reviews">
-									YELP REVIEWS
+									<a href="http://www.yelp.com/biz/brooklyn-bridge-brooklyn" target="_blank">YELP REVIEWS</a>
 								</div>
 							</div>
 
@@ -462,12 +502,12 @@
 									AMATEUR NIGHT AT THE APOLLO
 								</div>
 								<div class="reviews">
-									YELP REVIEWS
+									<a href="http://www.yelp.com/biz/apollo-theater-new-york?osq=apollo+theater+amateur+night" target="_blank">YELP REVIEWS</a>
 								</div>
 							</div>
 
 							<div class="image">
-								image
+								<img src="images/explore/apollo.png" alt="img" class="photo" />
 							</div>
 
 							<div class="description">
@@ -491,7 +531,7 @@
 					<div class="info paid">
 						<div class="place">
 							<div class="image">
-								<img src="images/maxRettig.jpg" alt="img" class="photo" />
+								<img src="images/explore/broadway.jpg" alt="img" class="photo" />
 							</div>
 
 							<div class="title">
@@ -499,7 +539,7 @@
 									BROADWAY SHOWS
 								</div>
 								<div class="reviews">
-									YELP REVIEWS
+									<a href="http://www.yelp.com/search?find_desc=Broadway+shows&find_loc=New+York%2C+NY&ns=1" target="_blank">YELP REVIEWS</a>
 								</div>
 							</div>
 
@@ -526,12 +566,12 @@
 									OUTDOOR MARKETS
 								</div>
 								<div class="reviews">
-									YELP REVIEWS
+									<a href="http://www.yelp.com/search?find_desc=Broadway+shows&find_loc=New+York%2C+NY&ns=1#find_desc=outdoor+markets" target="_blank">YELP REVIEWS</a>
 								</div>
 							</div>
 
 							<div class="image">
-								image
+								<img src="images/explore/markets.jpg" alt="img" class="photo" />
 							</div>
 
 							<div class="description">
@@ -553,7 +593,7 @@
 					<div class="info paid">
 						<div class="place">
 							<div class="image">
-								<img src="images/maxRettig.jpg" alt="img" class="photo" />
+								<img src="images/explore/coney-island.jpg" alt="img" class="photo" />
 							</div>
 
 							<div class="title">
@@ -561,7 +601,7 @@
 									CONEY ISLAND
 								</div>
 								<div class="reviews">
-									YELP REVIEWS
+									<a href="http://www.yelp.com/biz/coney-island-brooklyn" target="_blank">YELP REVIEWS</a>
 								</div>
 							</div>
 
@@ -580,12 +620,12 @@
 									5Pointz
 								</div>
 								<div class="reviews">
-									YELP REVIEWS
+									<a href="http://www.yelp.com/biz/5pointz-long-island-city" target="_blank">YELP REVIEWS</a>
 								</div>
 							</div>
 
 							<div class="image">
-								image
+								<img src="images/explore/5pointz.jpg" alt="img" class="photo" />
 							</div>
 
 							<div class="description">
@@ -603,7 +643,7 @@
 					<div class="info free">
 						<div class="place">
 							<div class="image">
-								<img src="images/maxRettig.jpg" alt="img" class="photo" />
+								<img src="images/explore/liberty.jpg" alt="img" class="photo" />
 							</div>
 
 							<div class="title">
@@ -611,7 +651,7 @@
 									STATUE OF LIBERTY
 								</div>
 								<div class="reviews">
-									YELP REVIEWS
+									<a href="http://www.yelp.com/biz/statue-of-liberty-ellis-island-foundation-new-york" target="_blank">YELP REVIEWS</a>
 								</div>
 							</div>
 
@@ -630,12 +670,12 @@
 									KAYAKING
 								</div>
 								<div class="reviews">
-									YELP REVIEWS
+									<a href="http://www.yelp.com/biz/downtown-boathouse-new-york-3" target="_blank">YELP REVIEWS</a>
 								</div>
 							</div>
 
 							<div class="image">
-								image
+								<img src="images/explore/kayaking.jpg" alt="img" class="photo" />
 							</div>
 
 							<div class="description">
@@ -651,7 +691,7 @@
 					<div class="info paid">
 						<div class="place">
 							<div class="image">
-								<img src="images/maxRettig.jpg" alt="img" class="photo" />
+								<img src="images/explore/fatCat.jpg" alt="img" class="photo" />
 							</div>
 
 							<div class="title">
@@ -659,19 +699,13 @@
 									FAT CAT
 								</div>
 								<div class="reviews">
-									YELP REVIEWS
+									<a href="http://www.yelp.com/biz/fat-cat-new-york-2" target="_blank">YELP REVIEWS</a>
 								</div>
 							</div>
 
 							<div class="description">
 								Named New York's best pool hall by New York Magazine, Fat Cat offers a wide variety of gaming entertainment choices: billiards, ping pong, shuffleboard, foosball, chess, and more. <a href="http://www.fatcatmusic.org/" target="_blank"> Website</a>
-							</div>
-							<div class="readMore" value="7">
-								More Info
-							</div>
-							<div class="hiddenInfo paid" style="display: none;" value="7">
-								There is a $3 cover to enter after 6pm in. On Fridays at 7pm, games are free! Additionally, live music is offered every night.
-							</div>				
+							</div>			
 						</div>
 					</div>
 				</div>
@@ -684,34 +718,26 @@
 									DRAWING IN BATTERY PARK
 								</div>
 								<div class="reviews">
-									YELP REVIEWS
+									<a href="http://www.yelp.com/biz/battery-park-new-york?osq=drawing+battery+park" target="_blank">YELP REVIEWS</a>
 								</div>
 							</div>
 
 							<div class="image">
-								image
+								<img src="images/explore/drawing.jpg" alt="img" class="photo" />
 							</div>
 
 							<div class="description">
 								Battery Park City Parks Conservancy offers a variety of free drawing programs. Materials are provided. For more information about these programs, check out the Conversancy’s <a href="http://bpcparks.org/event/drawing-in-the-park-2/2015-05-02/"> website</a>.
-							</div>
-							<div class="readMore" value="8">
-								More Info
-							</div>
-							<div class="hiddenInfo free" style="display: none;" value="8">
-								<strong>Drawing in the Park:</strong> Sketch and paint the Hudson River and parks with an artist/educator on Saturdays from 10am-noon in South Cove. <br>
-								<strong>Elements of Nature Drawing: </strong> Enjoy drawing the Wagner Park gardens with an artist/educator on Wednesdays from 11am-1pm in Wagner Park. <br>
-								<strong>Figure al Fresco:</strong> Learn figure drawing outdoors with a clothed model and an artist/educator on Wednesdays from, 2:30-4:30pm in South Cove. <br>
 							</div>	
 						</div>
 					</div>
 					<div class="pad"></div>
 				</div>
 			</div>
-		</div>
 	</div>
 </div>
 
+<script src="navbar.js"></script>
 
 <script>
 
@@ -748,58 +774,3 @@
 </body>
 
 </html>
-
-
-
-<!-- <div class="readMore" value="0">
-								read more
-							</div>
-							<div class="hiddenInfo free" style="display: none;" value="0">
-								more info more more more more more more more more<br><br><br>more<br><br><br>more<br><br>WAY MORE<br><br><br><br><br><br>MORE
-							</div>
-						-->
-
-
-
-<!-- 1 5Pointz
-2 9/11 Memorial
-3 Amateur Night at the Apollo
-4 Baseball
-6 Bicycling
-7 BLDG 92
-8 Broadway Shows
-9 Brooklyn Botanic Garden
-10 Brooklyn Bridge
-11 Carnegie Hall
-13 Chelsea Piers
-14 Chelsea Market
-15 Circle Line Sightseeing Cruises
-16 Comedy
-18 Dancing
-19 Drawing in Battery Park
-20 Eataly
-21 Empire State Building
-22 Events, Fairs, and Festivals
-23 Fat Cat
-24 Fishing
-25 Fitness
-26 Geocaching
-27 Governors Island
-28 Grant's Tomb
-30 John J. Harvey Fireboat
-31 Karaoke
-32 Kayaking
-33 Laser Tag / Paintball
-35 Model Sail Boats in Central Park
-36 Name Night
-38 New York Botanical Gardens
-39 New York Philharmonic
-40 Opera
-44 Queens Botanical Garden
-45 Read
-47 Staten Island Ferry
-48 Statue of Liberty
-50 Tenement Museum Tours
-51 The Tenement Museum is an awesome museum that preserves and interprets the history of immigration through the personal experiences of the generations of newcomers who settled in and built lives on Manhattan's Lower East Side. It offers 11 different tours and student tickets cost only $17. For more information, check out the website. 
-52 Walk from Tip to Tip
-53 Zoo -->

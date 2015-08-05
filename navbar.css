@@ -1,0 +1,70 @@
+/*NAVBAR*/
+	.center {
+		text-align: center;
+	}
+
+	#navbar {
+		overflow: hidden;
+	}
+
+	.div {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	.link {
+		font-weight: bold;
+		font-size: 13pt;
+		width: 130px;
+		margin-right: 10px;
+		float: left;
+		background-color: #66CCFF;
+	}
+
+	.border {
+		border: 2px solid black;
+	}
+
+	#firstLink {
+		margin-left: 150px;
+	}
+
+/*NAVBAR HTML*/
+
+/*		<div class="center" id="navbar">
+			<div class="link border div" id="firstLink" value="index">
+				<p>HOME<p>
+			</div>
+
+			<div class="link border div" value="calendar">
+				<p>CALENDAR<p>
+			</div>
+
+			<div class="link border div" value="newsletter">
+				<p>LCSC Newsletter<p>
+			</div>
+
+			<div class="link border div" value="resources">
+				<p>JTS, CU, BC <br>Links & Resources<p>
+			</div>
+
+			<div class="link border div" value="map">
+				<p>INTERACTIVE MAP<p>
+			</div>
+
+			<div class="link border div" value="explore">
+				<p>Explore New York City!<p>
+			</div>
+
+			<div class="link border div" value="guides">
+				<p>JP and DD Guide<p>
+			</div>
+
+			<div class="link border div" value="bylaws">
+				<p>LCSC Bylaws<p>
+			</div>
+
+			<div class="border div" value="bylaws" id="comments">
+				<p>Comments or suggestions?<br> Let us know!<p>
+			</div>
+	</div>*/
