@@ -1,0 +1,36 @@
+.issue {
+		background-color: #FF6666;
+	}
+
+	.center {
+		text-align: center;
+	}
+
+	#panel {
+		width: 100%;
+		height: 100%;
+	}
+
+	#topSection {
+		width: 100%;
+		height: 50%;
+	}
+
+	#bottomSection {
+		width: 100%;
+		height: 50%;
+	}
+
+	.imageDiv {
+		width: 30%;
+		height: 90%;
+		float: left;
+		border: 2px solid blue;
+	}
+
+	.text {
+		width: 68%;
+		height: 95%;
+		float: left;
+		border: 2px solid blue;
+	}
