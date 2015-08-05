@@ -20,6 +20,10 @@
 	#buttonPanel {
 		float: left;
 		text-align: center;
+		border: 4px solid red;
+		background-color: #C26666;
+		padding: 5px;
+		font-weight: bold;
 	}
 
 	#form {
@@ -89,9 +93,7 @@
 	">
 </div>
 
-<div id="buttonPanel" style="
-width: ;
-height: ;">
+<div id="buttonPanel" style="">
 <form id="form">
 	<table>
 		<tr>
@@ -123,6 +125,7 @@ height: ;">
 	<input type="button" value="John Jay" onclick="jump(this)"><br>
 	<input type="button" value="Hewitt" onclick="jump(this)"><br>
 	<input type="button" value="Dodge Gym" onclick="jump(this)"><br>
+	<p>Double Click to Center Map</p>
 </div>
 </div>
 
@@ -173,10 +176,6 @@ height: ;">
 
 		map.style.width = "1500px";
 		map.style.height = "2200px";
-
-		//size button frame
-		buttonPanel.style.width = (pageW*0.1).toString() + "px";
-		buttonPanel.style.height = (pageH*0.25).toString() + "px";
 	}
 
 	function inFrame(x,y) {

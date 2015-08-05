@@ -16,7 +16,7 @@
 	};
 	var vpFinance = {
 		name:"ross",
-		bio:"finance",
+		bio:"&nbsp&nbspRoss Haimowitz is a Joint Program senior, studying Economics-Political Science, Business Management and Jewish History. Born and raised in Toms River, New Jersey, Ross enjoys traveling, SCUBA diving, and boxing. On campus, he is a resident advisor, the treasurer of Alpha Epsilon Pi, and the vice president of the Alpha Kappa Psi business fraternity. Ross just completed an internship at Procter & Gamble and has worked in the finance and consulting industries as well.<br><br>&nbsp&nbspThis is Ross’s third year on student council and he is excited to be reprising his role as Vice President of Finance. In this position, Ross is responsible for budgeting student life fees and ensuring that every council member receives the necessary funds. Additionally, the Vice President of Finance is also in charge of organizing the annual List College Formal in coordination with the appointed co-chairs. Ross’s favorite part about student council is working with his fellow council members to plan enjoyable events for the entire student body.",
 		div:"hiddenDivTop2"
 	};
 	var vpComm = {
