@@ -172,12 +172,13 @@
 		font-size: 15pt;
 		font-weight: bold;
 		box-shadow: 3px 3px 3px #0000FF;
+		background-color: #FFCC80;
 	}
 
 	.hiddenDiv {
 		position: absolute;
 		width: 800px;
-		height: 440px;
+		height: 600px;
 		background-color: #FFCCCC;
 		font-size: 13pt;
 		box-shadow: 15px 15px 15px #000000;
@@ -185,27 +186,27 @@
 	}
 
 	#hiddenDivTop1 {
-		top: 715px;
+		top: 590px;
 	}
 
 	#hiddenDivTop2 {
-		top: 960px;
+		top: 840px;
 	}
 
 	#hiddenDivTop3 {
-		top: 1210px;
+		top: 1090px;
 	}
 
 	#hiddenDivBottom1 {
-		top: 1535px;
+		top: 1415px;
 	}
 
 	#hiddenDivBottom2 {
-		top: 1785px;
+		top: 1665px;
 	}
 
 	#hiddenDivBottom3 {
-		top: 2030px;
+		top: 1910px;
 	}
 
 	.large {

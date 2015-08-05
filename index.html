@@ -45,6 +45,11 @@
 		box-shadow: 5px 5px 5px #000000;
 	}
 
+	.blue {
+		background-color: #66CCFF;
+	}
+
+
 
 	</style>
 
@@ -111,7 +116,7 @@
 		<div>
 			<div id="main">
 				<div class="center div" id="scroll" style="position: relative; left: 0px; width: 200px;">
-					<div id="comingUp">UPCOMING EVENT! RSVP HERE</div>
+					<div id="comingUp">NSOP! (New Student Orientation Program)<br> CLICK FOR DETAILS</div>
 				</div>
 
 				<div id="panel">
@@ -161,13 +166,13 @@
 									<p>Are you new to The Joint Program or the Double Degree Program? We've got your back, everything you need to know to navigate this experience is right here!</p>
 								</div>
 
-								<div class="box border div">
+								<div class="blue box border div">
 									<div class="div" id="fbPage" value="fbPage">
 										<p>Like our Facebook page so you don't miss updates on all the LCSC action!</p>
 									</div>
 
-									<div class="div" id="fbGroup" value="fbGroup">
-										<p>And join our Facebook group to be automatically invited to all LCSC events!</p>
+									<div class="blue div" id="fbGroup" value="fbGroup">
+										<p>Check the Facebook group for all LCSC events!</p>
 									</div>
 									 
 								</div>
@@ -180,6 +185,7 @@
 						<div class="div" id="bottomMidCol">
 							<div class="border div" id="whoIsLCSC">
 								<h3 class="center large">Who's Who on LCSC?</h3>
+								<h4 class="center"><a href="documents/positions.docx" download>Download an Official Description of each Position</a>
 
 								<div class="councilMembers">
 									<h4 class="center medium">Executive Board</h4>
@@ -325,7 +331,7 @@
 									<div class="member uneven div">
 										
 										<div class="img border div">
-											<img src="images/" alt="Rebecca Galin" class="memberPic"/>
+											<img src="images/members/rebeccaGalin.jpg" alt="Rebecca Galin" class="memberPic"/>
 										</div>
 										<div class="memberBio even center div">
 											<div class="position center">Double Degree Rep.<br>Rebecca Galin</div>
@@ -357,6 +363,7 @@
 	</div>
 
 	<script src="navbar.js"></script>
+	<script src="members.js"></script>
 
 	<script>
 
@@ -407,59 +414,17 @@
 
 	}
 
-	//separate positions objects for maintainability
+	//fb page and fb group links
+	document.getElementById("fbPage").addEventListener("click", facebookPage);
+	document.getElementById("fbGroup").addEventListener("click", facebookGroup);
 
-	var president = {
-		name:"noam",
-		bio:"president",
-		div:"hiddenDivTop1"
-	};
-	var vpPolicy = {
-		name:"harry",
-		bio:"policy",
-		div:"hiddenDivTop1"
-	};
-	var vpSL = {
-		name:"sam",
-		bio:"student life",
-		div:"hiddenDivTop2"
-	};
-	var vpFinance = {
-		name:"ross",
-		bio:"finance",
-		div:"hiddenDivTop2"
-	};
-	var vpComm = {
-		name:"braden",
-		bio:"communciations",
-		div:"hiddenDivTop3"
-	};
+	function facebookPage() {
+		document.location.href = "https://www.facebook.com/ListCollegeStudentCouncil?fref=ts";
+	}
 
-	var SCP = {
-		name:"missy",
-		bio:"&nbsp&nbspHi List College! My name is Missy Zedeck and I am the senior class president on List College Student Council. I am a rising senior majoring in psychology at CU and modern Jewish studies at JTS. Being new to council, I am so excited to help plan events that will allow everyone to have an amazing year! My responsibilities as senior class president include planning events for the senior class and being a liaison between the administration and my class. Some goals that I have include planning some awesome events for the senior class, as well as helping the senior class make a lasting impact on the underclassmen.<br><br>&nbsp&nbspOutside of List College, I am a member of the Alpha Chi Omega sorority, serving as the assistant of PR/Marketing. I am also the main coordinator for After Hours Tutoring, one of the many clubs under Community Impact, which tutors and helps students with their homework at the American Regent Temporary Residency on 103rd st.<br><br>&nbsp&nbspI am really looking forward to being on council this year.",
-		div:"hiddenDivBottom1"
-	};
-	var JCP = {
-		name:"max",
-		bio:"&nbsp&nbspHi List College!!! I’m Max Rettig, the Junior Class President on List College Student Council for 2015-2016. At Columbia, I’m majoring in Creative Writing, and at List College, I’m majoring in Modern Jewish Studies with an elective concentration in Ethics. I’m active on both campuses — in my roles on LCSC and in the general List College community — and at Columbia, as a writer for Bwog (Columbia’s preeminent student news forum) and a sports commentator for WKCR, Columbia’s FM radio station (Tune in!). I’ve loved immersing myself in these different communities and only look to get even more engaged on campus. I also love to travel and explore New York City by foot and subway, visiting different neighborhoods, trying out new cafés and simply walking around and gathering the sights and sounds of the city. Oh, and when I get the chance, taking the “7” train to Queens for a fun day watching the Mets. <br><br>&nbsp&nbspAs Junior Class President, I’m responsible for being a liaison and a voice for the members of the junior class. In addition, my other responsibilities include holding monthly events that bring my entire class together to forge closer friendships and enjoy new experiences. Some of my goals include holding Shabbat potluck lunches and/or dinners for my entire class — an easy, fun and meaningful way to talk, learn and enjoy each other’s company — and having events that take us out of the Morningside Bubble and get the junior class excited, involved and wanting to see a new part of the city. I also strive to create a modern system of class-wide communication and engagement — goodbye long, boring emails, hello short weekly updates and fun, informative tweets!<br><br>&nbsp&nbspThis is my first year on LCSC, so most of all, I’m excited to meet new people, become closer with friends, be a loud and advocating voice for the interests of my peers. I want to help create a List College Student Council that students want to talk with, trust and become involved in themselves to make learning and playing at List College a better experience for everyone.",
-		div:"hiddenDivBottom1"
-	};
-	var sophCP = {
-		name:"marc",
-		bio:"&nbsp&nbspHello List College! I'm responsible for engaging the members of my class with one another through communal activities and expressing the interest of my class to the greater council. Through my monthly events, I hope to cultivate a sense of appreciation for my classmates' talents and unfound connection between students. In addition, I'm working to incorporate an element of service into the opportunities I provide and bring my class' community outside the walls of List College to inhabit surrounding spaces.<br><br>&nbsp&nbspI most recently served as a staff member for The JustCity Leadership Institute, the pre-college program of JTS, and social media coordinator for a minyan at the Columbia/Barnard Hillel, for which I am currently a service coordinator. I am always conscious to use what I know about Jewish leadership and my fellow classmates not only to represent them, but also to mobilize them to build unity.",
-		div:"hiddenDivBottom2"
-	};
-	var FCP = {
-		name:"fcp",
-		bio:"freshman class president",
-		div:"hiddenDivBottom2"
-	};
-	var DDR = {
-		name:"rebecca",
-		bio:"double degree representative",
-		div:"hiddenDivBottom3"
-	};
+	function facebookGroup() {
+		document.location.href = "https://www.facebook.com/groups/779251362131457/";
+	}
 
 	var bios = [president, vpPolicy, vpSL, vpFinance, vpComm, SCP, JCP, sophCP, FCP, DDR];
 
@@ -536,7 +501,7 @@
 
 	function rsvp() {
 		console.log("RSVP");
-		document.location.href = "https://www.google.com";
+		document.location.href = "https://www.facebook.com/CUNSOP?fref=ts";
 
 	}
 
