@@ -49,7 +49,10 @@
 		background-color: #66CCFF;
 	}
 
-
+	li {
+		font-size: 14pt;
+		text-decoration: underline;
+	}
 
 	</style>
 
@@ -349,10 +352,10 @@
 						<div class="center border div" id="upcomingEvents">
 							<h3><span class="large">Upcoming Events</span><br><span class="medium">CLICK TO RSVP!</span></h3>
 								<ul>
-									<li>Columbia Event</li>
-									<li>Barnard Event</li>
-									<li class="LCSCevent">LCSC Event</li>
-									<li class="LCSCevent">LCSC Event</li>
+									<li value="hey">Columbia NSOP</li><br>
+									<li>Barnard Event</li><br>
+									<li class="LCSCevent">LCSC Event</li><br>
+									<li class="LCSCevent">LCSC Event</li><br>
 									<li>JTS Event</li>
 								</ul>
 						</div>
@@ -383,10 +386,10 @@
 	window.onload = start;
 
 	//set on click for upcoming
-	document.getElementById("scroll").addEventListener("click", rsvp);
+	document.getElementById("scroll").addEventListener("click", rsvp, false);
 
 	//set on click for comments
-	document.getElementById("comments").addEventListener("click", commentForm);
+	document.getElementById("comments").addEventListener("click", commentForm, false);
 
 
 	//picture slideshow
@@ -415,8 +418,8 @@
 	}
 
 	//fb page and fb group links
-	document.getElementById("fbPage").addEventListener("click", facebookPage);
-	document.getElementById("fbGroup").addEventListener("click", facebookGroup);
+	document.getElementById("fbPage").addEventListener("click", facebookPage, false);
+	document.getElementById("fbGroup").addEventListener("click", facebookGroup, false);
 
 	function facebookPage() {
 		document.location.href = "https://www.facebook.com/ListCollegeStudentCouncil?fref=ts";
@@ -433,8 +436,8 @@
 
 	//add event listener to each member
 	for (var z = 0; z < members.length; z++) {
-		members[z].addEventListener("mouseover", mouseOverMember);
-		members[z].addEventListener("mouseout", mouseOutMember);
+		members[z].addEventListener("mouseover", mouseOverMember, false);
+		members[z].addEventListener("mouseout", mouseOutMember, false);
 	}
 
 	function mouseOverMember() {
@@ -500,9 +503,21 @@
 	}
 
 	function rsvp() {
-		console.log("RSVP");
 		document.location.href = "https://www.facebook.com/CUNSOP?fref=ts";
 
+	}
+
+	//setup upcoming event listeners
+	var events = document.getElementsByTagName("li");
+
+	for (var w = 0; w < events.length; w++) {
+		events[w].addEventListener("click", eventsUP, false);
+	}
+
+	function eventsUP() {
+		if (this.innerHTML == "Columbia NSOP") {
+			document.location.href = "https://www.facebook.com/CUNSOP?fref=ts";
+		}
 	}
 
 	</script>
