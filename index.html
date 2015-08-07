@@ -45,10 +45,6 @@
 		box-shadow: 5px 5px 5px #000000;
 	}
 
-	.red {
-		background-color: #FF6666;
-	}
-
 	li {
 		font-size: 14pt;
 		text-decoration: underline;
@@ -83,6 +79,11 @@
 		width: 800px;
 		float: left;
 		margin-left: 20px;
+	}
+
+	.footer {
+		font-size: 14pt;
+		background-color: #C26666;
 	}
 
 	</style>
@@ -175,30 +176,30 @@
 					<div class="center div">
 							<div class="boxes div">
 								
-								<div class="link red box border boxRight div" id="topLeft" value="index">
+								<div class="link red box border boxRight div" id="topLeft" value="index" style="background-color: #FF6666;">
 									<p>We're working on a project now that we're excited to tell you about soon, because it involves you! Check back frequently!</p>
 									<!-- <p>Help LCSC push JTS to divest from top FOSSIL FUEL companies by signing our petition and learning about our project!</p> -->
 								</div>
 
-								<div class="link red box border div" value="newsletter">
+								<div class="link red box border div" value="newsletter" style="background-color: #FF6666;">
 									<p>Read the lastest issue of <em>The LCSC Dispatch</em> to learn about everything happening with Council</p>
 								</div>
 
-								<div class="link red box border div" value="map">
+								<div class="link red box border div" value="map" style="background-color: #FF6666;">
 									<p>Looking for something on campus? Dining Hall, maybe? Check out our INTERACTIVE MAP</p>
 								</div>
 							</div>
 
 							<div class="boxes div">
-								<div class="link red box boxRight border div" id="bottomLeft" value="explore">
+								<div class="link red box boxRight border div" id="bottomLeft" value="explore" style="background-color: #FF6666;">
 									<p>EXPLORE NYC! We've got you covered with everything you need to do in New York City. A lot of them are FREE!</p>
 								</div>
 
-								<div class="link red box border div" value="guides">
+								<div class="link red box border div" value="guides" style="background-color: #FF6666;">
 									<p>Are you new to The Joint Program or the Double Degree Program? We've got your back, everything you need to know to navigate this experience is right here!</p>
 								</div>
 
-								<div class="red box border div">
+								<div class="red box border div" style="background-color: #FF6666;" id="fb">
 									<div class="div" id="fbPage" value="fbPage">
 										<p>Like our Facebook page so you don't miss updates on all the LCSC action!</p>
 									</div>
@@ -398,8 +399,8 @@
 			</div> <!-- end bottom row -->
 	</div>
 
-	<div class="center red">
-		<u>Built and maintained by Braden Katzman</u>
+	<div class="center footer">
+		Built and maintained by Braden Katzman
 	</div>
 </div>
 
@@ -452,6 +453,27 @@
 	    document.getElementById("photo1").src = picArray[currPic];
 	  }
 
+	}
+
+
+	//event listeners for boxes to change color on scroll over
+	var boxes = document.getElementsByClassName("box");
+
+	for (var h = 0; h < boxes.length; h++) {
+		boxes[h].addEventListener("mouseover", mouseOverBox, false);
+		boxes[h].addEventListener("mouseout", mouseOutBox, false);
+	}
+
+	function mouseOverBox() {
+		this.style.backgroundColor = "";
+
+		if(this.id == "fb") {
+			this.style.backgroundColor = "#66CCFF";
+		}
+	}
+
+	function mouseOutBox() {
+		this.style.backgroundColor = "#FF6666";
 	}
 
 	//fb page and fb group links
