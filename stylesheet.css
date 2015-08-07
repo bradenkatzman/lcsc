@@ -1,5 +1,5 @@
-#titleBar {
-		width: 1500px;
+	#titleBar {
+		width: 1200px;
 		height: 350px;
 		overflow: hidden;
 		box-shadow: 3px 3px 3px #000000;
@@ -29,8 +29,8 @@
 	}
 
 	.photo {
-		width: 500px;
-		height: 330px;
+		width: 350px;
+		height: 260px;
 		margin-top: 10px;
 		margin-bottom: 10px;
 		border: 3px solid #33CCFF;
@@ -46,7 +46,7 @@
 	}
 
 	#main {
-		width: 1500px;
+		width: 1200px;
 		margin-left: auto;
 		margin-right: auto;
 		overflow: hidden;
@@ -60,11 +60,6 @@
 		box-shadow: 10px 10px 10px #000000;
 	}
 
-	#leftCol {
-		width: 300px;
-		float: left;
-		margin-left: 20px;
-	}
 
 	#whatIsLCSC {
 		overflow: hidden;
@@ -73,28 +68,6 @@
 
 	#purpose {
 		margin-left: 4px;
-	}
-
-	#middleCol {
-		width: 800px;
-		float: left;
-		margin-left: 25px;
-
-	}
-
-	#topMidCol {
-		height: 400px;
-		width: 800px;
-	}
-
-	#bottomMidCol {
-		box-shadow: 3px 3px 3px #000000;
-	}
-
-	#rightCol {
-		width: 300px;
-		float: left;
-		margin-left: 35px;
 	}
 
 	#upcomingEvents {
@@ -186,27 +159,27 @@
 	}
 
 	#hiddenDivTop1 {
-		top: 590px;
+		top: 660px;
 	}
 
 	#hiddenDivTop2 {
-		top: 840px;
+		top: 925px;
 	}
 
 	#hiddenDivTop3 {
-		top: 1090px;
+		top: 1170px;
 	}
 
 	#hiddenDivBottom1 {
-		top: 1415px;
+		top: 1480px;
 	}
 
 	#hiddenDivBottom2 {
-		top: 1665px;
+		top: 1725px;
 	}
 
 	#hiddenDivBottom3 {
-		top: 1910px;
+		top: 1970px;
 	}
 
 	.large {

@@ -11,7 +11,7 @@
 	};
 	var vpSL = {
 		name:"sam",
-		bio:"student life",
+		bio:"My name is Sam Schachter and I am excited to be your List College Student Council Vice President of Student Life this Year! I am currently a junior in the joint program from Yardley, Pennsylvania, majoring in Jewish History at List, and Pre-Med Neuroscience and Behavior at Columbia. I am a Brother of Columbia's Iota Chapter of The Alpha Epsilon Pi Fraternity, as well as a Hebrew School Teacher. I will also be serving as a Ramah Service Corps fellow this upcoming year. This past summer I worked at St. Mary Medical Center in Langhorne, PA,  where I gained valuable hospital experience towards a future career in medicine. Previously, I had spent 10 summers as a camper and later staff member at Camp Ramah in the Poconos. I am a huge Philadelphia sports fan, as well as an avid fan of Survivor and Game of Thrones.  It is my job to ensure that there will be a plethora of exciting Shabbat dinners, JIFFYs with Professors, and alumni events this year, so get ready for a fun year!",
 		div:"hiddenDivTop2"
 	};
 	var vpFinance = {

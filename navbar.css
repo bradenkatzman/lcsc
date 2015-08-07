@@ -15,7 +15,7 @@
 	.link {
 		font-weight: bold;
 		font-size: 13pt;
-		width: 130px;
+		width: 100px;
 		margin-right: 10px;
 		float: left;
 		background-color: #66CCFF;
@@ -26,7 +26,7 @@
 	}
 
 	#firstLink {
-		margin-left: 150px;
+		margin-left: 100px;
 	}
 
 /*NAVBAR HTML*/

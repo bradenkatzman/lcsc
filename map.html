@@ -12,6 +12,12 @@
 		background-color: #FFEBD6;
 	}
 
+	#page {
+		width: 1200px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
 	#mapFrame {
 		border: 20px solid blue;
 		float: left;
@@ -44,6 +50,8 @@
 
 <body>
 
+	<div id="page">
+
 	<div class="center" id="navbar">
 			<div class="link border div" id="firstLink" value="index">
 				<p>HOME<p>
@@ -58,11 +66,11 @@
 			</div>
 
 			<div class="link border div" value="resources">
-				<p>JTS, CU, BC <br>Links & Resources<p>
+				<p>JTS, CU, BC <br>Resources<p>
 			</div>
 
 			<div class="link border div" value="map">
-				<p>INTERACTIVE MAP<p>
+				<p>Campus MAP<p>
 			</div>
 
 			<div class="link border div" value="explore">
@@ -123,12 +131,15 @@
 	<p> JUMP TO A LOCATION </p>
 	<input type="button" value="Butler" onclick="jump(this)"><br>
 	<input type="button" value="Low Library" onclick="jump(this)"><br>
+	<input type="button" value="Lewisohn" onclick="jump(this)"><br>
 	<input type="button" value="Lerner" onclick="jump(this)"><br>
 	<input type="button" value="John Jay" onclick="jump(this)"><br>
 	<input type="button" value="Hewitt" onclick="jump(this)"><br>
 	<input type="button" value="Dodge Gym" onclick="jump(this)"><br>
 	<p>Double Click to Center Map</p>
 </div>
+</div>
+
 </div>
 
 <script src="navbar.js"></script>
@@ -173,7 +184,7 @@
 		mapFrame.style.marginLeft = (pageW*0.005).toString() + "px";
 		mapFrame.style.marginRight = (pageW*0.005).toString() + "px";
 		mapFrame.style.marginTop = (pageH*0.005).toString() + "px";
-		mapFrame.style.width = (pageW*0.6).toString() + "px";
+		mapFrame.style.width = (pageW*0.5).toString() + "px";
 		mapFrame.style.height = (pageH*0.9).toString() + "px";
 
 		map.style.width = "1500px";
@@ -333,6 +344,14 @@ function jump(button) {
 		map.style.height = "2200px";
 		currentX = -400;
 		currentY = -600;
+		map.style.left = currentX + "px";
+		map.style.top = currentY + "px";
+	}
+	if (button.value == "Lewisohn") {
+		map.style.width = "1500px";
+		map.style.height = "2200px";
+		currentX = -200;
+		currentY = -700;
 		map.style.left = currentX + "px";
 		map.style.top = currentY + "px";
 	}

@@ -14,11 +14,39 @@
 		background-color: #FFEBE0;
 	}
 
+	#page {
+		width: 1200px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#left, #middle, #right {
+		width: 390px;
+		float: left;
+		text-align: center;
+		border: 2px solid black;
+		box-shadow: 2px 2px 2px black;
+		margin-right: 5px;
+	}
+
+	table {
+		text-align: center;
+		width: 100%;
+		height: 100%;
+		font-size: 14pt;
+	}
+
+	h3 {
+		text-decoration: underline;
+	}
+
 	</style>
 
 </head>
 
 <body>
+
+	<div id="page">
 
 	<div class="center" id="navbar">
 			<div class="link border div" id="firstLink" value="index">
@@ -34,11 +62,11 @@
 			</div>
 
 			<div class="link border div" value="resources">
-				<p>JTS, CU, BC <br>Links & Resources<p>
+				<p>JTS, CU, BC <br>Resources<p>
 			</div>
 
 			<div class="link border div" value="map">
-				<p>INTERACTIVE MAP<p>
+				<p>Campus MAP<p>
 			</div>
 
 			<div class="link border div" value="explore">
@@ -54,7 +82,72 @@
 			</div>
 	</div>
 
-	<h1>Resources<h1>
+	<h1 class="center">Resources</h1>
+
+			<div id="left">
+				<h3>Columbia Resources</h3>
+				<table>
+					<tr>
+						<td colspan="2"><a href="https://courseworks.columbia.edu/welcome/">Courseworks</a></td>
+					</tr>
+					<tr>
+						<td colspan="2"><a href="ssol.columbia.edu">SSOL</a></td>
+					</tr>
+					<tr>
+						<td colspan="2"><a href="https://vergil.registrar.columbia.edu/">Vergil</a></td>
+					</tr>
+					<tr>
+						<td colspan="2"><a href="http://bulletin.columbia.edu/general-studies/undergraduates/degree-fulfillment/core/core/">Core Requirements</a></td>
+					</tr>
+					<tr>
+						<td colspan="2"><a href="http://bulletin.columbia.edu/general-studies/undergraduates/majors-concentrations/">GS Majors and Concentrations</a></td>
+					</tr>
+					<tr>
+						<td colspan="2"><a href="https://gs.columbia.edu/student-life-student-council">GS Student Council</a></td>
+					</tr>
+					<tr>
+						<td colspan="2"><a href="https://cas.columbia.edu/cas/login?SAMLRequest=fVJLT8MwDL4j8R%2Bq3PvaQKBo7TSGEJN4VFvhwC1NvS5bmpQ42eDfk3VDwIFdP9vfw%2FZo%2FNHKYAsGhVYZSaOEBKC4roVqMvJS3oXXZJyfn42QtbKjE2dXag7vDtAGflIh7QsZcUZRzVAgVawFpJbTxeTxgQ6ihHZGW821JMHsNiOMN8tar7RYrzj3s9Vm3VZQS7aRvNsAbHinmrWsSfD6bWuwtzVDdDBTaJmyHkrSYZhchYOLMrmilykdXr6RoDgq3Qh1SHDKVnVoQnpflkVYPC%2FKnmArajBPvjsjjdaNhIjrdi9fMESx9fCSSQQSTBDBWG9wqhW6FswCzFZweJk%2FZGRlbYc0jne7XfRDE7PYu3NtJVgEtYsZR5L3u6V9PPNrqafNs29xkv%2FQj%2BJfVPnxZvsos9tCS8E%2Fg4mUejc1wKzPYY3zMe60aZn9Xy2N0h4RdbjsW6lT2AEXSwH%2BSHF%2BUP37HP5lvgA%3D&RelayState=https%3A%2F%2Faccounts.google.com%2FCheckCookie%3Fcontinue%3Dhttps%253A%252F%252Fmail.google.com%252Fmail%252F%253Fshva%253D1%26service%3Dmail%26ss%3D1%26ltmpl%3Ddefault">LION Mail</a></td>
+					</tr>
+					<tr>
+						<td colspan="2"><a href="http://density.adicu.com/">Density</a></td>
+					</tr>
+				</table>
+			</div>
+
+			<div id="middle">
+				<h3>List Resources</h3>
+				<table>
+					<tr>
+						<td colspan="2"><a href="https://jtsa.blackboard.com/webapps/portal/execute/tabs/tabAction?tab_tab_group_id=_10_1">Blackboard</a></td>
+					</tr>
+					<tr>
+						<td colspan="2"><a href="http://my.jtsa.edu/ICS/">MyJTSA</a></td>
+					</tr>
+					<tr>
+						<td colspan="2"><a href="https://exweb.jtsa.edu/owa/auth/logon.aspx?url=https://exweb.jtsa.edu/owa/&reason=0">JTS Email</a></td>
+					</tr>
+					<tr>
+						<td colspan="2"><a href="http://www.jtsa.edu/List_College_(Undergraduate)/List_College_Academics/Core_Curriculum.xml">List College Core</a></td>
+					</tr>
+					<tr>
+						<td colspan="2"><a href="http://www.jtsa.edu/List_College_(Undergraduate)/List_College_Academics/List_College_Majors.xml">List College Majors</a></td>
+					</tr>
+					<tr>
+						<td colspan="2">Need help registering? Don't know what all of these links are?<a href="http://www.lcsconline/guides.html">Click here</a></td>
+					</tr>
+				</table>
+			</div>
+
+			<div id="right">
+				<h3>Barnard Resources</h3>
+				<table>
+					<tr>
+						<td colspan="2s"><a href="http://barnard.edu/sga">Barnard SGA</a></td>
+					</tr>
+				</table>
+			</div>
+
+	</div>
 
 	<script src="navbar.js"></script>
 

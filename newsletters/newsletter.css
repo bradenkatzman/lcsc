@@ -1,3 +1,7 @@
+body {
+	background-color: #A3C2FF;
+}
+
 .issue {
 		background-color: #FF6666;
 	}
@@ -21,16 +25,21 @@
 		height: 50%;
 	}
 
-	.imageDiv {
-		width: 30%;
-		height: 90%;
+	#leftImage {
 		float: left;
 		border: 2px solid blue;
+		margin-right: 10px;
+	}
+
+	#rightImage {
+		float: right;
+		border: 2px solid blue;
+		margin-left: 10px;
 	}
 
 	.text {
-		width: 68%;
+		width: 100%;
 		height: 95%;
 		float: left;
-		border: 2px solid blue;
+		margin-right: 10px;
 	}
