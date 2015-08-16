@@ -52,93 +52,93 @@
 
 	<div id="page">
 
-	<div class="center" id="navbar">
+		<div class="center" id="navbar">
 			<div class="link border div" id="firstLink" value="index">
-				<p>HOME<p>
+				<p>HOME</p>
 			</div>
 
 			<div class="link border div" value="calendar">
-				<p>CALENDAR<p>
+				<p>CALENDAR</p>
 			</div>
 
 			<div class="link border div" value="newsletter">
-				<p>LCSC Newsletter<p>
+				<p>LCSC Newsletter</p>
 			</div>
 
 			<div class="link border div" value="resources">
-				<p>JTS, CU, BC <br>Resources<p>
+				<p>JTS, CU, BC <br>Resources</p>
 			</div>
 
 			<div class="link border div" value="map">
-				<p>Campus MAP<p>
+				<p>Campus MAP</p>
 			</div>
 
 			<div class="link border div" value="explore">
-				<p>Explore New York City!<p>
+				<p>Explore New York City!</p>
 			</div>
 
 			<div class="link border div" value="guides">
-				<p>JP and DD Guide<p>
+				<p>JP and DD Guide</p>
 			</div>
 
 			<div class="link border div" value="bylaws">
-				<p>LCSC Bylaws<p>
+				<p>LCSC Bylaws</p>
 			</div>
+		</div>
+
+		<h1 class="center">Click and Drag to Move Around the Map!</h1>
+
+		<div id="mapFrame" style="width: 0px;
+		height: 0px;
+		overflow: hidden;
+		margin-left: 0px;
+		margin-right: 0px;
+		margin-top: 0px;">
+		<img id="map" src="images/campusmap.png" alt="map" style="
+		position: relative;
+		left: 0px;
+		top: 0px;
+		width: 0px;
+		height: 0px;
+		">
 	</div>
 
-	<h1 class="center">Click and Drag to Move Around the Map!</h1>
+	<div id="buttonPanel" style="">
+		<form id="form">
+			<table>
+				<tr>
+					<td><input type="button" value="+" onclick="zoom(this)"></td>
+					<td><input type="button" value="-" onclick="zoom(this)"></td>
+				</tr>
+				<tr><td colspan="2"></td></tr>
+				<tr><td colspan="2"></td></tr>
+				<tr>
+					<td colspan="2"><input type="button" value="^" onclick="direction(this)"></td>
+				</tr>
+				<tr><td colspan="2"></td></tr>
+				<tr>
+					<td><input type="button" value="<" onclick="direction(this)"></td>
+					<td><input type="button" value=">" onclick="direction(this)"></td>
+				</tr>
+				<tr><td colspan="2"></td></tr>
+				<tr>
+					<td colspan="2"><input type="button" value="v" onclick="direction(this)"></td>
+				</tr>
+			</table>
+		</form>
 
-	<div id="mapFrame" style="width: 0px;
-	height: 0px;
-	overflow: hidden;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;">
-	<img id="map" src="images/campusmap.png" alt="map" style="
-	position: relative;
-	left: 0px;
-	top: 0px;
-	width: 0px;
-	height: 0px;
-	">
-</div>
-
-<div id="buttonPanel" style="">
-<form id="form">
-	<table>
-		<tr>
-			<td><input type="button" value="+" onclick="zoom(this)"></td>
-			<td><input type="button" value="-" onclick="zoom(this)"></td>
-		</tr>
-		<tr><td colspan="2"></td></tr>
-		<tr><td colspan="2"></td></tr>
-		<tr>
-			<td colspan="2"><input type="button" value="^" onclick="direction(this)"></td>
-		</tr>
-		<tr><td colspan="2"></td></tr>
-		<tr>
-			<td><input type="button" value="<" onclick="direction(this)"></td>
-			<td><input type="button" value=">" onclick="direction(this)"></td>
-		</tr>
-		<tr><td colspan="2"></td></tr>
-		<tr>
-			<td colspan="2"><input type="button" value="v" onclick="direction(this)"></td>
-		</tr>
-	</table>
-</form>
-
-<div id="jumpTo">
-	<p> JUMP TO A LOCATION </p>
-	<input type="button" value="Butler" onclick="jump(this)"><br>
-	<input type="button" value="Low Library" onclick="jump(this)"><br>
-	<input type="button" value="Lewisohn" onclick="jump(this)"><br>
-	<input type="button" value="Lerner" onclick="jump(this)"><br>
-	<input type="button" value="John Jay" onclick="jump(this)"><br>
-	<input type="button" value="Hewitt" onclick="jump(this)"><br>
-	<input type="button" value="Dodge Gym" onclick="jump(this)"><br>
-	<p>Double Click to Center Map</p>
-</div>
-</div>
+		<div id="jumpTo">
+			<p> JUMP TO A LOCATION </p>
+			<input type="button" value="Butler" onclick="jump(this)"><br>
+			<input type="button" value="Low Library" onclick="jump(this)"><br>
+			<input type="button" value="Lewisohn" onclick="jump(this)"><br>
+			<input type="button" value="Lerner" onclick="jump(this)"><br>
+			<input type="button" value="John Jay" onclick="jump(this)"><br>
+			<input type="button" value="Hewitt" onclick="jump(this)"><br>
+			<input type="button" value="Dodge Gym" onclick="jump(this)"><br>
+			<p>Double Click to Center Map</p>
+		</div>
+	</div>
 
 </div>
 
