@@ -20,6 +20,18 @@
 		margin-right: auto;
 	}
 
+	#iframe {
+		width: 900px;
+		height: 500px;
+		margin-left: 10%;
+		border: 1px solid black;
+	}
+
+	.change {
+		color: blue;
+		text-decoration: underline;
+	}
+
 	</style>
 
 </head>
@@ -64,7 +76,10 @@
 
 		<h1 class="center">Guides</h1>
 
-		<h3 class="center"><em>This page is currently under construction. Check back before the start of the school year for full guides to the Joint Program and Double Degree Program including: how to navigate registration, how to organize your schedule, what's missing from the Double Degree Handbook, and more!</em></h3>
+		<p class="center change" id="JP">Joint Program Guide</p>
+		<p class="center change" id="DD">Double Degree Handbook</p>
+
+		<iframe id="iframe" src="jointProgram.html"></iframe>
 
 
 	</div>
@@ -72,6 +87,26 @@
 	<script src="navbar.js"></script>
 
 	<script>
+
+	document.getElementById("JP").addEventListener("click", guide, false);
+	document.getElementById("DD").addEventListener("click", guide, false);
+
+	//iframe
+	var iframe = document.getElementById("iframe");
+
+	function guide() {
+		console.log("hey");
+
+		if (this.id == "DD") {
+			iframe.src = "doubleDegreeHandbook.html";
+			return;
+		}
+
+		if (this.id == "JP") {
+			iframe.src = "jointProgram.html";
+			return;
+		}
+	}
 
 	</script>
 
