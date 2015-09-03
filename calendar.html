@@ -102,17 +102,21 @@
 			<h2><u>What's Happening This Month? Click to RSVP!</u></h2>
 			<table>
 				<tr>
-					<td id="NSOP">NSOP!!!</td>
-					<td>Event TBD</td>
+					<td>Double Degree Meet-Up</td>
+					<td id="welcomeBack">Welcome Back Event</td>
 				</tr>
 				<tr>
-					<td>Event TBD</td>
-					<td>Event TBD</td>
+					<td>Sophomore Coffee House</td>
+					<td>Senior Planting Apples</td>
+				</tr>
+				<tr>
+					<td>Junior Welcome Back Ice Cream Social</td>
+					<td>Shabbat Dinner - FREE</td>
 				</tr>
 			</table>
 		</div>
 
-		<h1>Full LCSC Calendar</h1>
+		<h1>Click Events for Details!</h1>
 
 		<div id="calendar">
 			<iframe src="https://www.google.com/calendar/embed?title=List%20College%20Student%20Council%20Calendar%20of%20Events%202015-2016&amp;height=800&amp;wkst=1&amp;bgcolor=%23ccffff&amp;src=li9q6loimklijnddt2u61ljh9o%40group.calendar.google.com&amp;color=%230F4B38&amp;ctz=America%2FNew_York" style=" border:solid 1px #777 " width="900" height="800" frameborder="0" scrolling="no"></iframe>
@@ -133,8 +137,12 @@
 	}
 
 	function rsvp() {
-		if (this.id == "NSOP") {
-			document.location.href = "https://www.facebook.com/CUNSOP?fref=ts";
+		if (this.id == "welcomeBack") {
+			document.location.href = "https://www.facebook.com/events/1702163860013374/";
+		}
+
+		if (this.id == "") {
+			alert("This event is currently not taking RSVPs.");
 		}
 	}
 
