@@ -111,7 +111,7 @@
 				</tr>
 				<tr>
 					<td>Junior Welcome Back Ice Cream Social</td>
-					<td>Shabbat Dinner - FREE</td>
+					<td id="shabbatDinner">Shabbat Dinner - FREE</td>
 				</tr>
 			</table>
 		</div>
@@ -139,6 +139,10 @@
 	function rsvp() {
 		if (this.id == "welcomeBack") {
 			document.location.href = "https://www.facebook.com/events/1702163860013374/";
+		}
+
+		if (this.id == "shabbatDinner") {
+			document.location.href = "https://www.facebook.com/events/150464075295530/";
 		}
 
 		if (this.id == "") {

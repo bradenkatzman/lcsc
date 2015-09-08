@@ -42,7 +42,7 @@
 	};
 	var FCP = {
 		name:"fcp",
-		bio:"freshman class president",
+		bio:"first-year class president",
 		div:"hiddenDivBottom2"
 	};
 	var DDR = {
