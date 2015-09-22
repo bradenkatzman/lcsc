@@ -47,7 +47,6 @@
 
 	li {
 		font-size: 14pt;
-		text-decoration: underline;
 	}
 
 	#topRow {
@@ -153,7 +152,7 @@
 		<div id="main">
 
 			<div class="center div" id="scroll" style="position: relative; left: 0px; width: 200px;">
-				<div id="comingUp">Welcome Back Event!<br> CLICK FOR DETAILS</div>
+				<div id="comingUp">Movie Night! Oct. 8, 8:30pm, Moadon<br>CLICK TO RSVP!</div>
 			</div>
 
 			<div id="topRow">
@@ -161,11 +160,9 @@
 					<div class="center border div" id="upcomingEvents">
 						<h3><span class="large">Upcoming Events</span><br><span class="medium">CLICK TO RSVP!</span></h3>
 						<ul>
-							<li class="LCSCevent">Welcome Back Event!</li><br>
-							<li class="LCSCevent">Sophomore Coffee House</li><br>
-							<li class="LCSCevent">Senior Planting Apples</li><br>
-							<li class="LCSCevent">Junior Welcome Back Ice Cream Social</li><br>
-							<li class="LCSCevent">Shabbat Dinner...FREE!</li><br>
+							<li class="LCSCevent"><strong>What:</strong> Shabbat Dinner - <strong>When:</strong> Friday September 25 @ 8:30pm- <strong>Where:</strong> Goldsmith Moadon</li><br>
+							<li class="LCSCevent"><strong>What:</strong> Movie Night! - <strong>When:</strong> Thursday October 8 @ 8:30pm - <strong>Where:</strong> Goldsmith Moadon</li><br>
+							<li class="LCSCevent"><strong>What:</strong> JIFFY! - <strong>When:</strong> Tuesday October 13 @ 7:00pm - <strong>Where:</strong> Goldsmith Moadon</li><br>
 						</ul>
 					</div>
 
@@ -562,7 +559,7 @@
 	}
 
 	function rsvp() {
-		document.location.href = "https://www.facebook.com/events/1702163860013374/";
+		document.location.href = "https://www.facebook.com/events/423093491228596/";
 
 	}
 
@@ -574,20 +571,14 @@
 	}
 
 	function eventsUP() {
-		if (this.innerHTML == "Welcome Back Event!") {
-			document.location.href = "https://www.facebook.com/events/1702163860013374/";
-		}
-		if (this.innerHTML == "Sophomore Coffee House") {
-			alert("Check the CALENDAR for event details!");
-		}
-		if (this.innerHTML == "Senior Planting Apples") {
-			alert("Check the CALENDAR for event details!");
-		}
-		if (this.innerHTML == "Junior Welcome Back Ice Cream Social") {
-			alert("Check the CALENDAR for event details!");
-		}
-		if (this.innerHTML == "Shabbat Dinner...FREE!") {
+		if (this.innerHTML == "<strong>What:</strong> Shabbat Dinner - <strong>When:</strong> Friday September 25 @ 8:30pm- <strong>Where:</strong> Goldsmith Moadon") {
 			document.location.href = "https://www.facebook.com/events/150464075295530/";
+		}
+		if (this.innerHTML == "<strong>What:</strong> Movie Night! - <strong>When:</strong> Thursday October 8 @ 8:30pm - <strong>Where:</strong> Goldsmith Moadon") {
+			document.location.href = "https://www.facebook.com/events/423093491228596/";
+		}
+		if (this.innerHTML == "<strong>What:</strong> JIFFY! - <strong>When:</strong> Tuesday October 13 @ 7:00pm - <strong>Where:</strong> Goldsmith Moadon") {
+			alert("A Facebook will be created soon.");
 		}
 	}
 
