@@ -8,6 +8,8 @@
 
 	<link rel="stylesheet" type="text/css" href="navbar.css">
 
+	<link rel="stylesheet" href="progressBar/css/style.css">
+
 	<style type="text/css">
 
 	body {
@@ -25,6 +27,54 @@
 		margin-left: 250px;
 	}
 
+	#panel {
+
+	}
+
+	#intro {
+		font-size: 14pt;
+		text-align: center;
+	}
+
+	#divestJTS {
+		font-weight: bold;
+		font-size: 18pt;
+	}
+
+	h1 {
+		color: green;
+		font-size: 38pt;
+	}
+
+	#span1 {
+		font-weight: bold;
+		font-size: 16pt;
+	}
+
+	#infoLeft, #petitionRight {
+		width: 50%;
+		float: left;
+		font-size: 16pt;
+	}
+
+	#progressBar {
+		width: 1200px;
+		margin: 25px;
+		padding-bottom: 100px;
+	}
+
+	#progressTitle {
+		font-size: 22pt;
+	}
+
+	#temperatureChart {
+		width: 100%;
+	}
+
+	#quickFacts {
+		font-size: 16pt;
+	}
+
 	</style>
 
 </head>
@@ -33,7 +83,7 @@
 
 	<div id="page">
 
-	<div class="center" id="navbar">
+		<div class="center" id="navbar">
 			<div class="link border div" id="firstLink" value="index">
 				<p>HOME</p>
 			</div>
@@ -65,33 +115,86 @@
 			<div class="link border div" value="bylaws">
 				<p>LCSC Bylaws</p>
 			</div>
-	</div>
+		</div>
 
-	<h1 class="center">Divestment</h1>
+		<h1 class="center">DivestJTS</h1>
 
-	<div id="divestment">
+		<div id="panel">
 
-	<p>LCSC is working to encourage JTS to divest from fossil fuels. On average, about 5-10% of JTS's endowment is invested in the top 200 fossil fuel companies.</p>
-
-	<p class="center">Please sign our petition to help encourage JTS to divest</p>
-
-	<iframe src="https://docs.google.com/forms/d/1fAHyZpXeziFR2Z0fRCKzSamqjFYcz97Vb2AQ8VAOv5k/viewform?embedded=true" width="900" height="700" frameborder="0" marginheight="0" marginwidth="0" id="iframe">Loading...</iframe>
+			<p id="intro"><span id="divestJTS">DivestJTS</span> is List College's campaign to divest from fossil fuels at The Jewish Theological Seminary. Divestment from fossil fuel companies which lead the field in human-caused global warming is our first step in the fight for climate and social justice. <br><br><span id="span1">We have a moral obligation to create a world free of climate chaos for future generations.</u></p>
 
 
+			<!-- PROGRESS BAR -->
 
-</div>
-
-</div>
-
+			<p id="progressTitle" class="center">Our Progress</p>
 
 
+			<link href='http://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700' rel='stylesheet' type='text/css'>
 
-	<script src="navbar.js"></script>
+			<div class="checkout-wrap" id="progressBar">
+				<ul class="checkout-bar">
 
-	<script>
+					<li class="visited first">
+						<a href="#">Campaign Approved</a>
+					</li>
 
-	</script>
+					<li class="active">Letter to Chancellor</li>
 
-</body>
+					<li class="">Divestment Approved</li>
 
-</html>
+					<li class="">Divest from Oil</li>
+
+					<li class="">FOSSIL FUEL FREE JTS</li>
+
+					<!-- class options: next, active, visited, "" -->
+
+				</ul>
+			</div>
+
+			<!-- END PROGRESS BAR -->
+
+			<div id="infoLeft">
+				<p class="center"><span id="quickFacts">QUICK FACTS:
+					<ul>
+						<li>9 of the 10 warmest years on record have occured since 2000<br></li>
+						<li>Arctic Ice Minimum decreases 13.3% per decade</li>
+						<li>Land Ice decreases by 287 billion metric tons per year</li>
+						<li>Sea Level rises 3.22 mm per year</li>
+					</ul>
+					Source: http://climate.nasa.gov/<br><br>Oil Companies have the financial impetus to bring our earth to a point of irreversible change.<br><br>THEY MUST BE STOPPED. THEY CAN BE STOPPED.<br><br>Peabody Coal’s 2014 annual report stated, “divestment efforts [are] affecting the investment community, which could significantly affect demand for our products or our securities.” It’s time for JTS to join this movement.</span></p>
+					<p>When oil and natural gas is burned, it releases Carbon Dioxide (CO2) into the atmosphere, which works to trap heat from the sun in a process called the <a href="https://en.wikipedia.org/wiki/Greenhouse_effect" target="_blank">The Greenhouse Gas Effect</a>. It is obvious that our planet is warming at an alarming rate due to this effect. Often times, people will argue that we can't be sure that global warming is human-caused because we can't even agree on the global temperature. This is a false statement that is used to undermine the severity of climate change and the need for divestment from fossil fuels. As seen in this study from NASA, scientific research institutions from around the globe concur that temperatures have been consistently rising in the last 100 years, coinciding with the rise of industrialism which was and remains heavily dependent on the burning of fossil fuels.</p>
+					<img src="images/divestment/temperature.png" alt="warming phot nasa" id="temperatureChart">
+					<p>Each year, four international science institutions compile temperature data from thousands of stations around the world and make independent judgments about whether the year was warmer or cooler than average. “The official records vary slightly because of subtle differences in the way we analyze the data,” said Reto Ruedy, climate scientist at NASA’s Goddard Institute for Space Studies. “But they also agree extraordinarily well.”<br><a href="http://climate365.tumblr.com/search/temperature">Source</a></p>
+				</div>
+
+				<div id="petitionRight">
+					<h3 class="center">What We're Asking For:</h3>
+					<ul>
+						<li>Divest completely from the <a href="http://fossilfreeindexes.com/research/the-carbon-underground/" target="_blank">Carbon Underground 200</a> - the top 100 public coal top 100 public oil and gas companies globally</li>
+					</ul>
+
+					<h3 class="center">PLEASE sign this petition to support our campaign for a fossil free future.<br>Every signature brings us closer to our goal.</h3>
+					<iframe src="https://docs.google.com/forms/d/1fAHyZpXeziFR2Z0fRCKzSamqjFYcz97Vb2AQ8VAOv5k/viewform?embedded=true" width="600" height="1050" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+					<p>For more information, please see these websites:
+						<ol>
+							<li><a href="http://fossilfreeindexes.com/" target="_blank">Fossil Fuel Indexes</li>
+							<li><a href="http://350.org/" target="_blank">350.org</a></li>
+							<li><a href="http://www.ipcc.ch/" target="_blank">Intergovernmental Panel on Climate Change</a></li>
+						</ol>
+					</p>
+				</div>
+			</div>
+		</div>
+
+
+
+
+		<script src="navbar.js"></script>
+
+		<script>
+
+		</script>
+
+	</body>
+
+	</html>
