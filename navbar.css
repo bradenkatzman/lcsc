@@ -29,6 +29,11 @@
 		margin-left: 100px;
 	}
 
+	#divest {
+		font-size: 17pt;
+		background-color: orange;
+	}
+
 /*NAVBAR HTML*/
 
 /*		<div class="center" id="navbar">
