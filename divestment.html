@@ -58,19 +58,22 @@
 
 	#left {
 		float: left;
-		width: 300px;
-		color: #FFEBE0;
+		width: 290px;
+		/*color: #FFEBE0;*/
+		padding-right: 3px;
 	}
 
 	#mid {
 		float: left;
+		width: 600px;
 		border: 5px solid #85E085;
 	}
 
 	#right {
 		float: left;
-		width: 300px;
-		color: #FFEBE0;
+		width: 290px;
+		/*color: #FFEBE0;*/
+		padding-left: 3px;
 	}
 
 	#petitionMain {
@@ -100,6 +103,22 @@
 		background-color: #85E085;
 		box-shadow: 12px 12px 5px #888888;
 	}
+
+	.bold {
+		font-weight: bold;
+	}
+
+	.italic {
+		font-style: italic;
+	}
+
+	.large {
+		font-size: 16pt;
+	}
+
+	.center {
+		text-align: center;
+	}
 	</style> 
 
 </head>
@@ -109,39 +128,39 @@
 	<div id="page">
 
 		<div class="center" id="navbar">
-			<div class="link border div" id="firstLink" value="index">
+			<div class="link border div pad height" id="firstLink" value="index">
 				<p>HOME</p>
 			</div>
 
-			<div class="link border div" value="calendar">
-				<p>CALENDAR</p>
+			<div class="link border div height" value="calendar">
+				<p class="pad2">CALENDAR</p>
 			</div>
 
-			<div class="link border div" value="divestment" id="divest">
+			<div class="link border div height" value="divestment" id="divest">
 				<p>DivestJTS</p>
 			</div>
 
-			<div class="link border div" value="newsletter">
+			<div class="link border div height" value="newsletter"  id="dispatch">
 				<p><em>The LCSC Dispatch</em></p>
 			</div>
 
-			<div class="link border div" value="resources">
+			<div class="link border div height" value="resources">
 				<p>JTS, CU, BC <br>Resources</p>
 			</div>
 
-			<div class="link border div" value="map">
+			<div class="link border div height" value="map">
 				<p>Campus MAP</p>
 			</div>
 
-			<div class="link border div" value="explore">
+			<div class="link border div height" value="explore">
 				<p>Explore New York City!</p>
 			</div>
 
-			<div class="link border div" value="guides">
+			<div class="link border div height" value="guides">
 				<p>JP and DD Guide</p>
 			</div>
 
-			<div class="link border div" value="bylaws">
+			<div class="link border div height" value="bylaws">
 				<p>LCSC Bylaws</p>
 			</div>
 		</div>
@@ -151,75 +170,59 @@
 		</div>
 		<p id="mission">List College Student Council aims to divest The Jewish Theological Seminary's endowment from companies engaged in the extraction and burning of fossil fuels. We represent current students, alumni and the widespread Jewish community in our campaign to divest from unethical enterprises. We join the worldwide movement for climate justice and believe as Jews we have a moral obligation to ensure a future free of climate chaos.</p>
 
-		<!-- <br><br><br><br><br><br><br><br>
-		<p id="intro"><span id="divestJTS">DivestJTS</span> is List College Student Council's campaign to divest from fossil fuels at The Jewish Theological Seminary. Divestment from fossil fuels which cause drastic global warming is our first step in the fight for climate and social justice.</p>
-	-->
-
-	<!-- PROGRESS BAR -->
-	<p id="progressTitle" class="center">.</p>
+		<!-- PROGRESS BAR -->
+		<p id="progressTitle" class="center">.</p>
 
 
-	<link href='http://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700' rel='stylesheet' type='text/css'>
 
-	<div class="checkout-wrap" id="progressBar">
-		<ul class="checkout-bar">
+		<div class="checkout-wrap" id="progressBar">
+			<ul class="checkout-bar">
 
-			<li class="visited first">
-				<a href="#">Campaign Approved - 9/2015</a>
-			</li>
+				<li class="visited first">
+					<a href="#">Campaign Approved - 9/2015</a>
+				</li>
 
-			<li class="active">500 signatures</li>
+				<li class="active">500 signatures</li>
 
-			<li class="next">Letter to Chancellor</li>
+				<li class="next">Letter to Chancellor</li>
 
-			<li class="">Divestment Approved</li>
+				<li class="">Divestment Approved</li>
 
-			<li class="">FOSSIL FUEL FREE JTS</li>
+				<li class="">FOSSIL FUEL FREE JTS</li>
 
-			<!-- class options: next, active, visited, "" -->
+				<!-- class options: next, active, visited, "" -->
 
-		</ul>
-	</div>
-
-		<!-- <div id="moralObl">
-			<p class="center">
-				<span id="span1">
-					Divestment is the only option because the burning of fossil fuels is morally wrong.<br><br>We have a moral obligation to create a world free of climate chaos for future generations.
-				</span>
-			</p>
-		</div> -->
-
+			</ul>
+		</div>
 		<div id="petitionMain">
-			<!-- <div>
-				<h3 class="center">What We're Calling For:</h3>
-				<ul>
-					<li class="center">Complete DIVESTMENT from the <a href="http://fossilfreeindexes.com/research/the-carbon-underground/" target="_blank">Carbon Underground 200</a> - the top 100 public coal and top 100 public oil and gas companies globally</li>
-				</ul>
-			</div> -->
-
-			<div id="left">
-				Who We Are
-			</div>
-			<!-- <h3 class="center">PLEASE sign this petition to support our campaign for a fossil free future.<br>Every signature brings us closer to our goal.</h3> -->
-			<div id="mid">
-				<iframe src="https://docs.google.com/forms/d/1fAHyZpXeziFR2Z0fRCKzSamqjFYcz97Vb2AQ8VAOv5k/viewform?embedded=true" width="600" height="1115" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-			</div>
-			<div id="right">
-				Why Divest? What We're Asking For?
+			<div id="left" class="center">
+				<span class="bold large">What is Climate Change?</span>
+				<p> A change in global or regional climate patterns, in particular a change apparent from the mid to late 20th century onwards and attributed largely to the increased levels of atmospheric carbon dioxide produced by the use of fossil fuels.<p>
+					<p class="bold italic">According to NASA, at least 97% of actively-publishing climate scientists agree that climate change is “very likely due to human activities.” (climate.nasa.gov)</p><br>
+					<span class="bold large">What's At Stake?</span>
+					<p>Today, the amount of carbon dioxide is higher than at any time in the last 800,000 years. To avoid the most catastrophic effects of climate change we can only burn less than 500 gigatons of carbon, while the fossil fuel industry currently holds 2,860 gigatons in its reserves</p>
+				</div>
+				<div id="mid">
+					<iframe src="https://docs.google.com/forms/d/1fAHyZpXeziFR2Z0fRCKzSamqjFYcz97Vb2AQ8VAOv5k/viewform?embedded=true" width="600" height="1115" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+				</div>
+				<div id="right" class="center">
+					<span class="bold large">What is Divestment?</span>
+					<p>The opposite of an investment – it simply means getting rid of stocks, bonds, or investment funds that are unethical or morally ambiguous. By doing so we stigmatize the fossil fuel industry and expose its destructive practices.</p><br>
+					<span class="bold large">What is Divestment at JTS?</span>
+					<p>Like any other academic institution, JTS has a portfolio of investments so that its endowment makes money. We are demanding that JTS divest ("un-invest") from holdings in fossil fuel companies.</p><br>
+					<span class="bold large">Why Divest?</span>
+					<p>In order to preserve and protect the earth, something must be done. We must do is divest from companies that engage in the extractions and selling of fossil fuels starting with the <a href="http://fossilfreeindexes.com/research/the-carbon-underground/" target="_blank">Carbon Underground 200</a>, the top 100 public coal and 100 public oil and gas companies.</p>
+				</div>
 			</div>
 		</div>
-	</div>
 
+		<script src="navbar.js"></script>
 
+		<script>
 
+		</script>
 
+	</body>
 
-	<script src="navbar.js"></script>
-
-	<script>
-
-	</script>
-
-</body>
-
-</html>
+	</html>

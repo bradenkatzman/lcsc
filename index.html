@@ -116,39 +116,39 @@
 		</div>
 
 		<div class="center" id="navbar">
-			<div class="link border div" id="firstLink" value="index">
+			<div class="link border div pad height" id="firstLink" value="index">
 				<p>HOME</p>
 			</div>
 
-			<div class="link border div" value="calendar">
-				<p>CALENDAR</p>
+			<div class="link border div height" value="calendar">
+				<p class="pad2">CALENDAR</p>
 			</div>
 
-			<div class="link border div" value="divestment" id="divest">
+			<div class="link border div height" value="divestment" id="divest">
 				<p>DivestJTS</p>
 			</div>
 
-			<div class="link border div" value="newsletter">
+			<div class="link border div height" value="newsletter"  id="dispatch">
 				<p><em>The LCSC Dispatch</em></p>
 			</div>
 
-			<div class="link border div" value="resources">
+			<div class="link border div height" value="resources">
 				<p>JTS, CU, BC <br>Resources</p>
 			</div>
 
-			<div class="link border div" value="map">
+			<div class="link border div height" value="map">
 				<p>Campus MAP</p>
 			</div>
 
-			<div class="link border div" value="explore">
+			<div class="link border div height" value="explore">
 				<p>Explore New York City!</p>
 			</div>
 
-			<div class="link border div" value="guides">
+			<div class="link border div height" value="guides">
 				<p>JP and DD Guide</p>
 			</div>
 
-			<div class="link border div" value="bylaws">
+			<div class="link border div height" value="bylaws">
 				<p>LCSC Bylaws</p>
 			</div>
 		</div>
@@ -265,7 +265,7 @@
 										</div>
 
 										<div class="img border div">
-											<img src="images/" alt="Harry Blumsack" class="memberPic"/>
+											<img src="images/members/harryBlumsack.jpg" alt="Harry Blumsack" class="memberPic"/>
 										</div>
 									</div>
 								</div>
@@ -377,7 +377,7 @@
 										</div>
 
 										<div class="img border div">
-											<img src="images/" alt="FCP" class="memberPic"/>
+											<img src="" alt="FCP" class="memberPic"/>
 										</div>
 									</div>
 								</div>
@@ -428,14 +428,11 @@
 	//set on click for upcoming
 	document.getElementById("scroll").addEventListener("click", rsvp, false);
 
-	//set on click for comments
-	document.getElementById("comments").addEventListener("click", commentForm, false);
-
 
 	//picture slideshow
 	var currPic=0;
 
-	var picArray = new Array("images/slideshow/lcsc.jpg", "images/slideshow/CUquad.jpg", "images/slideshow/doubleDegree.jpg", "images/slideshow/snow.jpg", "images/slideshow/CUgrad.jpg", "images/slideshow/steps.jpg", "images/slideshow/ddEvent.jpg", "images/slideshow/barnard.jpg", "images/slideshow/butler.jpg", "images/slideshow/jiffy.jpg","images/slideshow/cp.jpg", "images/slideshow/marcElla.jpg", "images/slideshow/sukkot.jpg");
+	var picArray = new Array("images/slideshow/lcsc.jpg", "images/slideshow/CUquad.jpg", "images/slideshow/doubleDegree.jpg", "images/slideshow/snow.jpg", "images/slideshow/CUgrad.jpg", "images/slideshow/steps.jpg", "images/slideshow/ddEvent.jpg", "images/slideshow/barnard.jpg", "images/slideshow/butler.jpg", "images/slideshow/jiffy.jpg", "images/slideshow/cp.jpg", "images/slideshow/marcElla.jpg", "images/slideshow/sukkot.jpg");
 	var imageArray = new Array();
 
 	for(var i=0; i < picArray.length; i++) {

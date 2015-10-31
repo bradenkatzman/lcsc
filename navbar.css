@@ -34,6 +34,22 @@
 		background-color: orange;
 	}
 
+	#dispatch {
+		background-color: red;
+	}
+
+	.pad {
+		font-size: 17pt;
+	}
+
+	.pad2 {
+		padding-top: 10px;
+	}
+
+	.height {
+		height: 75px;
+	}
+
 /*NAVBAR HTML*/
 
 /*		<div class="center" id="navbar">
