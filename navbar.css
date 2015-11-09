@@ -35,7 +35,15 @@
 	}
 
 	#dispatch {
+		color: red;
+		font-size: 16pt;
+		font-weight: bold;
+	}
+
+	#LCULPA {
+		font-size: 18pt;
 		background-color: red;
+		color: white;
 	}
 
 	.pad {

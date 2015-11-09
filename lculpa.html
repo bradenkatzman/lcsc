@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-	<title>Bi-Weekly Newsletter</title>
+	<title>LCULPA</title>
 
 	<link rel="stylesheet" type="text/css" href="navbar.css">
 
@@ -20,24 +20,22 @@
 		margin-right: auto;
 	}
 
-	#pastIssues {
-		text-align: center;
-		width: 200px;
-		float: left;
-		border: 2px solid black;
+	#iframe {
+		width: 900px;
+		height: 500px;
+		margin-left: 10%;
+		border: 1px solid black;
 	}
 
-	#latestIssue {
-		width: 950px;
-		height: 800px;
-		float: left;
-		border: 2px solid blue;
+	.change {
+		color: blue;
+		text-decoration: underline;
 	}
 
 	#iframe {
-		width: 100%;
-		height: 100%;
-		border: 2px solid blue;
+		width: 1020px;
+		height: 1000px;
+		margin-left: 100px;
 	}
 
 	</style>
@@ -45,6 +43,7 @@
 </head>
 
 <body>
+
 	<div id="page">
 
 		<div class="center" id="navbar">
@@ -84,42 +83,11 @@
 				<p>LCSC Bylaws</p>
 			</div>
 		</div>
+		<br>
+		<iframe src="http://lculpa.herokuapp.com" id="iframe"></iframe>
 
-		<div id="pastIssues">
-			<h3>Read Past Issues</h3>
-			<ol>
-				<li value="1">August 6th, 2015 - <u>KICKOFF Edition</u></li>
-				<li value="2">September 8th, 2015 - <u>Welcome Back Edition</u></li>
-			</ol>
-		</div>
-
-		<div id="latestIssue">
-			<iframe id="iframe" src="newsletters/3.html"></iframe>
-		</div>
-
-	</div>
+		<script src="navbar.js"></script>
 
 
-	<script src="navbar.js"></script>
-
-	<script>
-
-	//global iframe var
-	var iframe = document.getElementById("iframe");
-
-	var issues = document.getElementsByTagName("li");
-
-	for (var i = 0; i < issues.length; i++) {
-		issues[i].addEventListener("click", loadIssue, false);
-	}
-
-	function loadIssue() {
-		var extension = this.value;
-		iframe.src = "newsletters/" + extension + ".html";
-	}
-
-	</script>
-
-</body>
-
-</html>
+	</body>
+	</html>
