@@ -73,7 +73,7 @@
 				<p class="pad2">CALENDAR</p>
 			</div>
 
-			<div class="link border div height" value="divestment" id="divest">
+			<div class="link border div height" value="fossilfreejts" id="divest">
 				<p>FossilFree<br>JTS</p>
 			</div>
 
@@ -106,7 +106,15 @@
 			<h2><u>What's Happening This Month? Click to RSVP!</u></h2>
 			<table>
 				<tr>
-					<td id="">NOVEMBER SCHEDULE WILL BE POSTED SOON!</td>
+					<td id="majorsNight" colspan="2">Majors Night</td>
+					
+					
+				</tr>
+				<tr>
+					<td id="ffForum">FossilFreeJTS Goldsmith Forum</td>
+				</tr>
+				<tr>
+					<td id="torah101">Torah 101 w/ Jewish Supplemental Learning</td>
 				</tr>
 			</table>
 		</div>
@@ -132,12 +140,17 @@
 	}
 
 	function rsvp() {
-		if (this.id == "shabbatDinner") {
-			document.location.href = "https://www.facebook.com/events/150464075295530/";
+		if (this.id == "majorsNight") {
+			document.location.href = "https://www.facebook.com/events/896504213759452/";
 		}
-
-		if (this.id == "") {
-			alert("This event is currently not taking RSVPs.");
+		// else if(this.id == "ffForum") {
+		// 	alert("A Facebook event will be created soon!");
+		// }
+		else if (this.id == "torah101") {
+			document.location.href = "https://www.facebook.com/events/1716858991863033/";
+		}
+		else {
+			alert("A Facebook event will be created soon!")
 		}
 	}
 
