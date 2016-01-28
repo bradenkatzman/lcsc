@@ -160,6 +160,8 @@
 
 			<div class="center div" id="scroll" style="position: relative; left: 0px; width: 200px;">
 				<div id="comingUp">Shabbat Dinner!<br>Friday December 4 @ 7:45pm</div>
+				<div id="comingUp">Welcome Back to School!</div>
+
 			</div>
 
 			<div id="topRow">
@@ -169,6 +171,7 @@
 						<ul>
 							<li class="LCSCevent"><strong>FossilFreeJTS Goldsmith Forum<br></strong>Wed. 12/2 @ 8:30pm</li>
 							<li class="LCSCevent"><strong>Shabbat Dinner</strong><br>Tues 12/4 @ 7:45pm</li>
+							<li class="LCSCevent"><strong>LC Deans Welcome Back Lunch<br></strong>Thurs. 1/21, 11am-1pm</li>
 						</ul>
 					</div>
 
@@ -561,7 +564,12 @@
 	}
 
 	function rsvp() {
+
 		document.location.href = "https://www.facebook.com/events/1147011858673914/";
+
+		alert("WELCOME BACK FOR SPRING 2016");
+		//document.location.href = "https://www.facebook.com/events/1147011858673914/";
+
 	}
 
 	//setup upcoming event listeners
@@ -572,6 +580,7 @@
 	}
 
 	function eventsUP() {
+
 		if (this.innerHTML == "<strong>FossilFreeJTS Goldsmith Forum<br></strong>Wed. 12/2 @ 8:30pm") {
 			document.location.href = "https://www.facebook.com/events/1687146228238726/";
 		}
@@ -579,6 +588,11 @@
 			document.location.href = "https://www.facebook.com/events/1147011858673914/";
 		}
 		else {
+
+		if (this.innerHTML == "<strong>LC Deans Welcome Back Lunch<br></strong>Thurs. 1/21, 11am-1pm") {
+			alert("Join the List College Deans in the Goldsmith Moadon on Thursday from 11am to 1pm for a Welcome Back Lunch!");
+		} else {
+
 			alert("A Facebook event will be created soon.");
 		}
 	}
