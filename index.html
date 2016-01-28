@@ -159,7 +159,7 @@
 		<div id="main">
 
 			<div class="center div" id="scroll" style="position: relative; left: 0px; width: 200px;">
-				<div id="comingUp">MAJORS NIGHT<br>Monday November 16 @ 8:30pm</div>
+				<div id="comingUp">Shabbat Dinner!<br>Friday December 4 @ 7:45pm</div>
 			</div>
 
 			<div id="topRow">
@@ -167,11 +167,8 @@
 					<div class="center border div" id="upcomingEvents">
 						<h3><span class="large">Upcoming Events</span><br><span class="medium">CLICK TO RSVP!</span></h3>
 						<ul>
-							<li class="LCSCevent"><strong>Majors Night<br></strong>Monday November 16 @ 8:30pm</li>
-							<br>
-							<li class="LCSCevent"><strong>FossilFreeJTS Goldsmith Forum<br></strong>Monday November 23 @ 7:30pm</li>
-							<br>
-							<li class="LCSCevent"><strong>Torah 101 w/ Jewish Supplemental Learning</strong><br>Tuesday November 24 @ 7:30pm</li>
+							<li class="LCSCevent"><strong>FossilFreeJTS Goldsmith Forum<br></strong>Wed. 12/2 @ 8:30pm</li>
+							<li class="LCSCevent"><strong>Shabbat Dinner</strong><br>Tues 12/4 @ 7:45pm</li>
 						</ul>
 					</div>
 
@@ -435,7 +432,7 @@
 	//picture slideshow
 	var currPic=0;
 
-	var picArray = new Array("images/slideshow/lcsc.jpg", "images/slideshow/CUquad.jpg", "images/slideshow/doubleDegree.jpg", "images/slideshow/snow.jpg", "images/slideshow/CUgrad.jpg", "images/slideshow/steps.jpg", "images/slideshow/ddEvent.jpg", "images/slideshow/barnard.jpg", "images/slideshow/butler.jpg", "images/slideshow/jiffy.jpg", "images/slideshow/cp.jpg", "images/slideshow/marcElla.jpg", "images/slideshow/sukkot.jpg");
+	var picArray = new Array("images/slideshow/lcsc.jpg", "images/slideshow/CUquad.jpg", "images/slideshow/doubleDegree.jpg", "images/slideshow/snow.jpg", "images/slideshow/CUgrad.jpg", "images/slideshow/steps.jpg", "images/slideshow/ddEvent.jpg", "images/slideshow/barnard.jpg", "images/slideshow/sophomoreLasagna.jpg", "images/slideshow/butler.jpg", "images/slideshow/jiffy.jpg", "images/slideshow/cp.jpg", "images/slideshow/marcElla.jpg", "images/slideshow/sukkot.jpg");
 	var imageArray = new Array();
 
 	for(var i=0; i < picArray.length; i++) {
@@ -564,7 +561,7 @@
 	}
 
 	function rsvp() {
-		document.location.href = "https://www.facebook.com/events/896504213759452/";
+		document.location.href = "https://www.facebook.com/events/1147011858673914/";
 	}
 
 	//setup upcoming event listeners
@@ -575,15 +572,11 @@
 	}
 
 	function eventsUP() {
-		if (this.innerHTML == "<strong>Majors Night<br></strong>Monday November 16 @ 8:30pm") {
-			document.location.href = "https://www.facebook.com/events/896504213759452/";
+		if (this.innerHTML == "<strong>FossilFreeJTS Goldsmith Forum<br></strong>Wed. 12/2 @ 8:30pm") {
+			document.location.href = "https://www.facebook.com/events/1687146228238726/";
 		}
-		else if (this.innerHTML == "<strong>FossilFreeJTS Goldsmith Forum<br></strong>Monday November 23 @ 7:30pm") {
-			alert("A Facebook event will be created soon.");
-
-		}
-		else if (this.innerHTML == "<strong>Torah 101 w/ Jewish Supplemental Learning</strong><br>Tuesday November 24 @ 7:30pm") {
-			document.location.href = "https://www.facebook.com/events/1716858991863033/";
+		else if (this.innerHTML == "<strong>Shabbat Dinner</strong><br>Tues 12/4 @ 7:45pm") {
+			document.location.href = "https://www.facebook.com/events/1147011858673914/";
 		}
 		else {
 			alert("A Facebook event will be created soon.");

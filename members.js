@@ -6,7 +6,7 @@
 	};
 	var vpPolicy = {
 		name:"harry",
-		bio:"policy",
+		bio:"Hi! My name is Harry Blumsack, and I’m your LCSC Vice President of Policy this year. I am a Junior studying Computer Science, and Jewish Thought. I’m very excited to be serving in a role that allows me to directly hear your concerns and work with the JTS administration to implement the changes you want to make List College a better place to live and study. Last year, I served as VP of Finance for LCSC, and am happy to be on again. \n\nThis year, I have already worked with several members of the JTS administration to achieve housing reforms, work study improvements, and facilities improvements. In addition, I head up the Policy Task Force and Residential Housing Committees. These two groups are comprised of dedicated List students who know that the institution we study in and the building we live in can always be improved upon! I look forward to a great second year on LCSC! ",
 		div:"hiddenDivTop1"
 	};
 	var vpSL = {
